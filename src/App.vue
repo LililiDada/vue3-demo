@@ -1,13 +1,15 @@
 <script setup lang="ts">
 // import HelloWorld from './components/HelloWorld.vue'
 // import QrCode from './components/QrCode.vue';
-import ArrayCondition from './components/ArrayCondition.vue';
+// import ArrayCondition from './components/ArrayCondition.vue';
+import GetArrayOne from './components/GetArrayOne.vue';
 </script>
 
 <template>
   <!-- <HelloWorld msg="Vite + Vue" /> -->
   <!-- <QrCode /> -->
-  <ArrayCondition />
+  <!-- <ArrayCondition /> -->
+  <GetArrayOne />
 </template>
 
 <style scoped>
