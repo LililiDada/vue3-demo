@@ -1,9 +1,10 @@
 import { defineStore } from 'pinia';
-import { reactive, computed } from 'vue';
+import { reactive, computed, ref } from 'vue';
 
 const useArrayStore = defineStore('arrayStore', () => {
   const homeArray = reactive<{ name: string }[]>([]);
-  const allArray = reactive<{ name: string }[]>([]);
+  const allArray = reactive<{ name: string; display?: string }[]>([]);
+  const showControl = ref<boolean>(false);
   const updateHomeArray = () => {
     const arr = [
       {
@@ -29,6 +30,10 @@ const useArrayStore = defineStore('arrayStore', () => {
       {
         name: '属性5',
       },
+      {
+        name: '属性6',
+        display: 'showControl',
+      },
     ];
     homeArray.push(...arr);
     allArray.push(...allArr);
@@ -48,7 +53,15 @@ const useArrayStore = defineStore('arrayStore', () => {
     console.log('=====isHeader', item, index > -1 ? true : false);
     return index > -1 ? true : false;
   });
-  return { homeArray, allArray, updateHomeArray, addArray, delArray, isHeader };
+  return {
+    homeArray,
+    allArray,
+    showControl,
+    updateHomeArray,
+    addArray,
+    delArray,
+    isHeader,
+  };
 });
 
 export default useArrayStore;

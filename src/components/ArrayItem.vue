@@ -8,7 +8,7 @@ interface IProps {
   name: string;
   header?: boolean;
   isHeaderIcon?: boolean;
-  item: object;
+  item: { name: string; display?: string };
 }
 
 // const { isHeaderIcon, item, header } = toRefs(defineProps<IProps>());
@@ -17,8 +17,14 @@ interface IProps {
 //   if (!isHeaderIcon.value && !header.value) return arrayStore.addArray(item);
 // };
 
+const page: keyof typeof arrayStore = 'showControl';
+console.log(arrayStore[page], arrayStore);
+
 const props = defineProps<IProps>();
 const handleArray = () => {
+  if (props.item?.display) {
+    console.log(arrayStore[props.item.display as keyof typeof arrayStore]);
+  }
   if (props.isHeaderIcon) return arrayStore.delArray(props.item);
   if (!props.isHeaderIcon && !props.header)
     return arrayStore.addArray(props.item);
