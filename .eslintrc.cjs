@@ -28,5 +28,7 @@ module.exports = {
   plugins: ['@typescript-eslint', 'vue'],
   rules: {
     '@typescript-eslint/no-explicit-any': ['off'],
+    // 关闭名称校验
+    'vue/multi-word-component-names': 'off',
   },
 };

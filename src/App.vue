@@ -2,14 +2,16 @@
 // import HelloWorld from './components/HelloWorld.vue'
 // import QrCode from './components/QrCode.vue';
 // import ArrayCondition from './components/ArrayCondition.vue';
-import GetArrayOne from './components/GetArrayOne.vue';
+// import GetArrayOne from './components/GetArrayOne.vue';
+import Draggable from './components/Draggable.vue';
 </script>
 
 <template>
   <!-- <HelloWorld msg="Vite + Vue" /> -->
   <!-- <QrCode /> -->
   <!-- <ArrayCondition /> -->
-  <GetArrayOne />
+  <!-- <GetArrayOne /> -->
+  <Draggable />
 </template>
 
 <style scoped>
