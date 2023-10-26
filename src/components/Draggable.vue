@@ -2,19 +2,14 @@
   <div>
     <draggable
       class="list-group"
-      v-model="allArray"
-      @change="onMoveCallback"
-      :move="getdata"
-      tag="transition-group"
+      :disabled="false"
+      :list="allArray"
       :component-data="{
-        tag: 'div',
-        type: 'transition-group',
         name: !drag ? 'flip-list' : null,
       }"
-      v-bind="dragOptions"
       @start="drag = true"
       @end="drag = false"
-      item-key="order"
+      itemKey="name"
     >
       <template #item="{ element }">
         <div>{{ element.name }}</div>
@@ -39,7 +34,6 @@ onMounted(() => {
 const dragOptions = {
   animation: 200,
   group: 'description',
-  disabled: false,
   ghostClass: 'ghost',
 };
 const drag = ref<boolean>(false);
