@@ -2,7 +2,6 @@
   "name": "vue3-demo",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
@@ -42,6 +41,7 @@
     "stylelint-config-standard-vue": "^1.0.0",
     "stylelint-less": "^2.0.0",
     "stylelint-order": "^6.0.3",
+    "ts-node": "^10.9.2",
     "typescript": "^5.0.2",
     "vite": "^4.4.5",
     "vitest": "^1.0.4",

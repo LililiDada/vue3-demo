@@ -22,8 +22,8 @@ pnpm dev
 
 **4、将依赖添加到不用依赖项类别**
 ① 不指定依赖类型默认安装到dependencies
-② 指定依赖安装到devDependencies
+② 指定依赖安装到devDependencies -D
 
 ```bash
-pnpm add [package] --dev
+pnpm add [package] -D
 ```
