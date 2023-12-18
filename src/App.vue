@@ -4,6 +4,10 @@
 // import ArrayCondition from './components/ArrayCondition.vue';
 // import GetArrayOne from './components/GetArrayOne.vue';
 import Draggable from './components/Draggable.vue';
+import createCustomComponent from './hooks/createCustomCompoent';
+const Customcomponent = createCustomComponent('draggable', Draggable);
+
+console.log(Customcomponent, '=========Customcomponent');
 </script>
 
 <template>
@@ -11,7 +15,8 @@ import Draggable from './components/Draggable.vue';
   <!-- <QrCode /> -->
   <!-- <ArrayCondition /> -->
   <!-- <GetArrayOne /> -->
-  <Draggable />
+  <!-- <Draggable /> -->
+  <Customcomponent />
 </template>
 
 <style scoped>
