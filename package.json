@@ -13,6 +13,7 @@
     "lint:style": "stylelint \"./**/*.{css,less,vue,html}\" --fix"
   },
   "dependencies": {
+    "crypto-js": "^4.2.0",
     "pinia": "^2.1.7",
     "qrcode": "^1.5.3",
     "vue": "^3.3.4",
@@ -20,6 +21,7 @@
     "vuedraggable": "^4.1.0"
   },
   "devDependencies": {
+    "@types/crypto-js": "^4.2.1",
     "@types/jsdom": "^21.1.6",
     "@types/qrcode": "^1.5.2",
     "@typescript-eslint/eslint-plugin": "^6.7.4",
