@@ -5,7 +5,6 @@ function a(a: number, b: number) {
 
 a(1, 3);
 
-
 import CryptoJS from 'crypto-js';
 
 /**
@@ -14,9 +13,8 @@ import CryptoJS from 'crypto-js';
  * @param keyInBase64Str base64编码后的key
  * @returns {string} base64编码后的密文
  */
-export function encryptByAES(plainText:any, keyInBase64Str:any) {
-  
-  if(plainText instanceof Object) {
+export function encryptByAES(plainText: any, keyInBase64Str: any) {
+  if (plainText instanceof Object) {
     plainText = JSON.stringify(plainText);
   }
 
@@ -47,8 +45,8 @@ export function decryptByAES(cipherText: string, keyInBase64Str: string) {
 }
 
 const secretKey = 'sQPoC/1do9BZMkg8I5c09A==';
-const key = [1,3,4,5];
+const key = [1, 3, 4, 5];
 const cipherText = encryptByAES(key, secretKey);
-const plainText:any = decryptByAES(cipherText, secretKey);
-console.log(`Hello加密后的密文为：${cipherText}`,secretKey.length);
+const plainText: any = decryptByAES(cipherText, secretKey);
+console.log(`Hello加密后的密文为：${cipherText}`, secretKey.length);
 console.log(`解密后的内容为：${plainText},${typeof plainText}`);
