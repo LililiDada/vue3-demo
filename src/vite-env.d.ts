@@ -7,3 +7,9 @@ declare interface Window {
 declare interface global {
   Add: any;
 }
+
+declare module '*.vue' {
+  import { ComponentOptions } from 'vue';
+  const componentOptions: ComponentOptions;
+  export default componentOptions;
+}
