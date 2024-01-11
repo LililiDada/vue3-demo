@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc && vite build",
+    "build": "vue-tsc && vite build --mode production",
     "preview": "vite preview",
     "test": "vitest",
     "coverage": "vitest run --coverage",
@@ -50,7 +50,9 @@
     "ts-node": "^10.9.2",
     "typescript": "^5.0.2",
     "unplugin-vue-components": "^0.26.0",
+    "unplugin-auto-import": "^0.17.2",
     "vite": "^4.4.5",
+    "vite-plugin-html": "^3.2.0",
     "vitest": "^1.0.4",
     "vue-tsc": "^1.8.5"
   }
