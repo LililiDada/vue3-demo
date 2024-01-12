@@ -9,7 +9,9 @@ const homePage = () =>
 
 const checkBox = () =>
   import(/* webpackChunkName: 'checkBox' */ '@/pages/index/views/demo/checkBox.vue');
-  
+
+const paster = () =>
+  import(/* webpackChunkName: 'checkBox' */ '@/pages/index/views/demo/paster.vue');
 const routes: RouteRecordRaw[] = [
   {
     path: '/demo',
@@ -25,6 +27,11 @@ const routes: RouteRecordRaw[] = [
         path: 'checkbox',
         name: 'checkBox',
         component: checkBox,
+      },
+      {
+        path: 'paster',
+        name: 'paster',
+        component: paster,
       },
     ],
   },

@@ -15,3 +15,5 @@ declare module '*.vue' {
 }
 
 declare module 'postcss-px-to-viewport';
+
+declare module 'hammer-vue-plugin';
