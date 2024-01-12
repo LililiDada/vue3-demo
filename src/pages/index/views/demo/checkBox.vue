@@ -13,6 +13,8 @@
   >
     企业名称</van-checkbox
   >
+
+  <div class="test-box" @focus="() => console.log('我是🐕')"></div>
 </template>
 
 <script setup lang="ts">
@@ -34,3 +36,11 @@ const box = (prop: string) => {
   console.log(infoShowMap[prop], '是否可选');
 };
 </script>
+<style scoped>
+.test-box {
+  width: 200px;
+  height: 400px;
+  background: pink;
+  margin-top: 20px;
+}
+</style>

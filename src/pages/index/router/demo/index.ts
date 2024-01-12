@@ -1,19 +1,25 @@
 import { RouteRecordRaw } from 'vue-router';
 
 const DemoIndex = () =>
-  import(/* DemoIndex */ '@/pages/index/views/demo/index.vue');
+  import(/* webpackChunkName: 'DemoIndex' */ '@/pages/index/views/demo/index.vue');
+
+
+const homePage = () =>
+  import(/* webpackChunkName: 'homePage' */ '@/pages/index/views/demo/homePage.vue');
 
 const checkBox = () =>
-  import(/* checkBox */ '@/pages/index/views/demo/checkBox.vue');
+  import(/* webpackChunkName: 'checkBox' */ '@/pages/index/views/demo/checkBox.vue');
+  
 const routes: RouteRecordRaw[] = [
   {
-    path: '/',
-    redirect: '/demo',
+    path: '/demo',
+    name: 'demo',
+    component: DemoIndex,
     children: [
       {
-        path: 'demo',
-        name: 'demo',
-        component: DemoIndex,
+        path: 'homepage',
+        name: 'homePage',
+        component: homePage,
       },
       {
         path: 'checkbox',
