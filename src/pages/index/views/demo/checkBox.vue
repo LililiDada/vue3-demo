@@ -18,8 +18,6 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
-
 const usernameChecked = ref(false);
 const custnameChecked = ref(false);
 const detail = {
@@ -38,9 +36,9 @@ const box = (prop: string) => {
 </script>
 <style scoped>
 .test-box {
+  margin-top: 20px;
   width: 200px;
   height: 400px;
   background: pink;
-  margin-top: 20px;
 }
 </style>

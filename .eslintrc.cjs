@@ -8,6 +8,7 @@ module.exports = {
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:vue/vue3-essential',
+    './.eslintrc-auto-import.json',
   ],
   overrides: [
     {
@@ -30,5 +31,8 @@ module.exports = {
     '@typescript-eslint/no-explicit-any': ['off'],
     // 关闭名称校验
     'vue/multi-word-component-names': 'off',
+  },
+  globals: {
+    HammerInput: true,
   },
 };
