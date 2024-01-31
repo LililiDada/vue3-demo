@@ -37,7 +37,8 @@
     "src/**/*.vue",
     "./auto-imports.d.ts",
     "src/pages/index/demo.js",
-    "config/*.ts"
+    "config/*.ts",
+    "src/utils/paster.js"
   ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

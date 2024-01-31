@@ -66,7 +66,7 @@ export const VueHammer: MyPlugin = {
          */
         const event = binding.arg as string;
         if (!event) {
-          console.warn('[vue-hammer] event type argument is required.');
+          console.warn('[vue-hammer] event type argument is required.',el);
         }
 
         el.__hammerConfig = el.__hammerConfig || {};

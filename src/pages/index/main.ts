@@ -3,8 +3,7 @@ import './style.css';
 import App from './App.vue';
 import router from './router';
 import { createPinia } from 'pinia';
-import { VueHammer } from '@/utils/paster';
 const pinia = createPinia();
 const app = createApp(App);
 
-app.use(router).use(VueHammer).use(pinia).mount('#app');
+app.use(router).use(pinia).mount('#app');
