@@ -2,7 +2,6 @@
   "name": "vue3-demo",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build --mode production",
@@ -11,7 +10,8 @@
     "coverage": "vitest run --coverage",
     "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx --fix",
     "format": "prettier --write \"./**/*.{html,vue,ts,js,json,md}\"",
-    "lint:style": "stylelint \"./**/*.{css,less,vue,html}\" --fix"
+    "lint:style": "stylelint \"./**/*.{css,less,vue,html}\" --fix",
+    "option": "node ./scripts/index"
   },
   "dependencies": {
     "crypto-js": "^4.2.0",
@@ -33,6 +33,8 @@
     "@typescript-eslint/parser": "^6.7.4",
     "@vant/auto-import-resolver": "^1.0.2",
     "@vitejs/plugin-vue": "^4.2.3",
+    "commander": "^11.1.0",
+    "ejs": "^3.1.9",
     "eslint": "^8.51.0",
     "eslint-plugin-vue": "^9.17.0",
     "jsdom": "^23.0.1",

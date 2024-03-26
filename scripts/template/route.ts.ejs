@@ -1,0 +1,15 @@
+import { RouteRecordRaw } from 'vue-router';
+
+const <%= name %>Index = () => 
+  import(/* webpackChunkName: 'index-<%= lowername %>Index' */ '@/pages/index/views/<%= type %>/<%= lowername %>/index.vue');
+
+const routes: RouteRecordRaw[] = [
+  {
+    path: '<%= lowername %>',
+    name: '<%= name %>Index',
+    component: <%= name %>Index,
+    children: [],
+  },
+];
+
+export default routes;
