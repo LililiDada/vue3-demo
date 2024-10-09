@@ -1,10 +1,18 @@
 <script setup lang="ts">
+import { render, h } from 'vue';
 // import HelloWorld from './components/HelloWorld.vue'
 // import QrCode from './components/QrCode.vue';
 // import ArrayCondition from './components/ArrayCondition.vue';
 // import GetArrayOne from './components/GetArrayOne.vue';
 import Draggable from '../../components/Draggable.vue';
 import createCustomComponent from '../../hooks/createCustomCompoent';
+
+import { showToast } from '../../functionComponents/toast/index';
+showToast({
+  message: '这是一个轻提示',
+  autoClose: false,
+});
+render(h('div', '3333333'), document.body);
 const Customcomponent = createCustomComponent('draggable', Draggable);
 
 // console.log(Customcomponent, '=========Customcomponent');
