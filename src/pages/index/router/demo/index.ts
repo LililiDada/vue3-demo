@@ -12,6 +12,13 @@ const checkBox = () =>
 
 const paster = () =>
   import(/* webpackChunkName: 'checkBox' */ '@/pages/index/views/demo/paster.vue');
+
+const chat = () =>
+  import(/* webpackChunkName: 'checkBox' */ '@/pages/index/views/demo/chat.vue');
+
+
+const shaking = () =>
+  import(/* webpackChunkName: 'checkBox' */ '@/pages/index/views/demo/shaking.vue');
 const routes: RouteRecordRaw[] = [
   {
     path: '/demo',
@@ -33,6 +40,16 @@ const routes: RouteRecordRaw[] = [
         name: 'paster',
         component: paster,
       },
+      {
+        path: 'chat',
+        name: 'chat',
+        component: chat,
+      },
+      {
+        path: 'shaking',
+        name: 'shaking',
+        component: shaking,
+      }
     ],
   },
 ];
