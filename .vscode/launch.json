@@ -12,6 +12,16 @@
       "args": ["${relativeFile}"],
       "cwd": "${workspaceRoot}",
       "protocol": "inspector"
+    },
+    {
+      "name": "Run pnpm Command",
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "pnpm", // 指定运行时为 pnpm
+      "args": ["option", "create", "test", "-t", "index"], // 传递命令行参数
+      "cwd": "${workspaceRoot}", // 设置当前工作目录
+      "console": "integratedTerminal", // 在集成终端中运行命令
+      "protocol": "inspector"
     }
   ]
 }

@@ -11,7 +11,7 @@ function firstLetterUpper(word) {
   return result;
 }
 
-function compileEjs(tempName, data) {
+function compileEjs(tempName, data = {}) {
   return new Promise((resolve, reject) => {
     const tempPath = `./template/${tempName}`;
     const absolutePath = path.resolve(__dirname, tempPath);
