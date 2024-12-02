@@ -1,11 +1,12 @@
-import { JSDOM } from 'jsdom';
+import { JSDOM,ResourceLoader } from 'jsdom';
 import { url } from '../../constant';
 
 import fs from 'fs';
 import path from 'path';
 
 const html = `
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <title>jsdom External Script Example</title>
   </head>
@@ -22,10 +23,16 @@ export class DOM {
       url?: string;
     } = {},
   ) {
+
+    new ResourceLoader({
+      userAgent: 'Mozixxxxx'
+    })
+
     this.dom = new JSDOM(html, {
       url: option?.url || 'http://baidu.com',
       runScripts: 'dangerously',
       resources: 'usable',
+      includeNodeLocations: true
     });
 
     this.evalScript();
@@ -33,9 +40,13 @@ export class DOM {
   }
 
   private setGlobal() {
-    vi.stubGlobal('location', this.dom.window.location);
-    vi.stubGlobal('navigator', this.dom.window.navigator);
-    vi.stubGlobal('Add', this.dom.window.add);
+    // vi.stubGlobal('location', this.dom.window.location);
+    // vi.stubGlobal('navigator', this.dom.window.navigator);
+    // vi.stubGlobal('Add', this.dom.window.add);
+    // vi.stubGlobal('document', this.dom.window.document);
+    // 保证window下的属性和方法来源一致
+    vi.stubGlobal('window',this.dom.window)
+    
   }
 
   private evalScript() {
