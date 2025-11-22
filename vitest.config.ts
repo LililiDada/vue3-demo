@@ -9,6 +9,7 @@ export default defineConfig((configEnv) =>
         globals: true,
         environment: 'jsdom',
         setupFiles: 'src/test/setup.ts',
+        // includeSource: ['src/utils/*.ts'],
         server: {
           deps: {
             inline: ['vant'],

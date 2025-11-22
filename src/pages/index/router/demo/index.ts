@@ -5,20 +5,25 @@ const DemoIndex = () =>
 
 
 const homePage = () =>
-  import(/* webpackChunkName: 'homePage' */ '@/pages/index/views/demo/homePage.vue');
+  import(/* webpackChunkName: 'DemoIndex' */ '@/pages/index/views/demo/homePage.vue');
 
 const checkBox = () =>
-  import(/* webpackChunkName: 'checkBox' */ '@/pages/index/views/demo/checkBox.vue');
+  import(/* webpackChunkName: 'DemoIndex' */ '@/pages/index/views/demo/checkBox.vue');
 
 const paster = () =>
-  import(/* webpackChunkName: 'checkBox' */ '@/pages/index/views/demo/paster.vue');
+  import(/* webpackChunkName: 'DemoIndex' */ '@/pages/index/views/demo/paster.vue');
 
 const chat = () =>
-  import(/* webpackChunkName: 'checkBox' */ '@/pages/index/views/demo/chat.vue');
+  import(/* webpackChunkName: 'DemoIndex' */ '@/pages/index/views/demo/chat.vue');
 
 
 const shaking = () =>
-  import(/* webpackChunkName: 'checkBox' */ '@/pages/index/views/demo/shaking.vue');
+  import(/* webpackChunkName: 'DemoIndex' */ '@/pages/index/views/demo/shaking.vue');
+
+
+
+const echarts = () =>
+  import(/* webpackChunkName: 'DemoIndex' */ '@/pages/index/views/demo/echarts.vue');
 const routes: RouteRecordRaw[] = [
   {
     path: '/demo',
@@ -49,6 +54,11 @@ const routes: RouteRecordRaw[] = [
         path: 'shaking',
         name: 'shaking',
         component: shaking,
+      },
+      {
+        path: 'echarts',
+        name: 'echarts',
+        component: echarts,
       }
     ],
   },

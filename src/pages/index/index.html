@@ -1,10 +1,25 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + Vue + TS</title>
+    <style>
+      html {
+        --dv-color-background-base: #000b1a;
+        --dv-color-background-overlay: #000b1a;
+        --dv-color-background-page: #000b1a;
+      }
+
+      /* dark 模式 */
+      html .dark {
+        --dv-color-background-base: #000b1a;
+        --dv-color-background-overlay: #000b1a;
+        --dv-color-background-page: #000b1a;
+      }
+
+    </style>
   </head>
   <body>
     <div id="app"></div>
