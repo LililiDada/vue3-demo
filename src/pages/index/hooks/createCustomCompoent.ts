@@ -1,3 +1,5 @@
+
+import type { Component } from 'vue';
 import { defineComponent, h } from 'vue';
 
 /**
@@ -7,7 +9,7 @@ import { defineComponent, h } from 'vue';
  * @param {CustomComponent} component
  * @return {Component}
  */
-export default function createCustomComponent(customName:string, asyncComponent:any) {
+export default function createCustomComponent(customName:string, asyncComponent:Component) {
     return defineComponent({
         name: customName,
         setup() {
