@@ -1,0 +1,86 @@
+schema: spec-driven
+
+context: |
+  # Frontend 开发规范
+
+  ## 1. 技术栈
+  - Vue 3 + TypeScript（`<script setup lang="ts">`）
+  - Vite 4 构建
+  - Vant 4 UI 库（自动按需引入：VantResolver）
+  - Vue Router 4（Hash 模式）
+  - Pinia 状态管理（setup 语法）
+  - Axios 请求（/api → proxy → localhost:8000）
+  - Less 样式
+  - PostCSS px-to-viewport（设计稿 375px）
+  - ESLint + Prettier + Stylelint
+
+  ## 2. 多入口规范
+  - 每个入口对应 `src/pages/{name}/` 目录
+  - config/viteConfig.ts 自动扫描 `src/pages/` 下子目录生成多页面入口
+  - 每个入口必须包含：`index.html`、`main.ts`、`App.vue`、`router/index.ts`
+  - 可选目录：`views/`、`components/`、`hooks/`
+
+  ## 3. API 规范
+  - 新增请求文件 → `api/service/xxx.ts`
+  - 引入：`import request from '../request'`
+  - `api/index.ts` 中导出：`export * from './service/xxx'`
+  - 组件中引用：`import { getFn } from '@/api'`
+  - 请求默认 POST，参数放 body
+  - 响应拦截器自动解包 data，错误自动 reject
+
+  ## 4. 路由规范
+  - 全局路由 `src/router/index.ts` 提供 addRoutes 方法
+  - 页面路由模块放 `pages/{name}/router/xxx.ts`
+  - 路由使用箭头函数懒加载：
+    ```ts
+    const MyPage = () => import('@/pages/{name}/views/myPage.vue')
+    ```
+  - 在 `pages/{name}/router/index.ts` 中 addRoutes 注册
+  - meta 字段：
+    - `pageTitle` → 自动设为 document.title
+    - `keepAlive` → App.vue 控制 keep-alive 缓存
+  - path：小写+连字符 `/my-page`
+
+  ## 5. 页面与组件规范
+  - 页面文件：`pages/{name}/views/xxx.vue`
+  - 页面级组件：`pages/{name}/components/`
+  - 全局公共组件：`src/components/`
+  - 文件名小驼峰 `myFund.vue`，组件名大驼峰 `MyFund.vue`
+  - 使用 `<script setup lang="ts">`
+
+  ## 6. Store 规范
+  - Pinia setup 语法（composition store）
+  - 文件：`store/xxx.ts`
+  - 模板：
+    ```ts
+    import { defineStore } from 'pinia'
+    const useXxxStore = defineStore('xxxStore', () => {
+      const state = ref()
+      const action = () => {}
+      return { state, action }
+    })
+    export default useXxxStore
+    ```
+
+  ## 7. 代码规范
+  ### ESLint
+  - Vue3 + TypeScript 推荐规则
+  - `@typescript-eslint/no-explicit-any` 关闭
+  - `vue/multi-word-component-names` 关闭
+
+  ### Prettier
+  - printWidth: 80 / tabWidth: 2 / singleQuote / semi / trailingComma all
+
+  ### 样式
+  - Less + Stylelint（CSS 属性顺序约定）
+  - PostCSS px-to-viewport（375px 设计稿，写 px 自动转 vw）
+
+  ### AutoImport
+  - 自动引入 vue（ref, reactive, computed, watch 等）、vue-router、pinia
+  - Vant 组件自动按需引入
+  - 均无需手动 import
+
+  ## 8. 工具函数目录
+  - `src/utils/`
+
+# Per-artifact rules (optional)
