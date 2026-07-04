@@ -28,7 +28,9 @@ pnpm dev
 | `http://localhost:5173/fundmarket.html#/` | 基金页面 |
 
 > 项目是多页面应用（MPA），`src/pages/` 下每个目录是一个独立入口。
+>
 > 通过 `shortUrlPlugin` 实现短路径访问，无需写完整模板路径。
+>
 > 新增入口后重启 dev server 即可自动识别。
 
 **4、将依赖添加到不用依赖项类别**
