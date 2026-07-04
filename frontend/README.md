@@ -41,14 +41,96 @@ pnpm dev
 pnpm add [package] -D
 ```
 
-**5、项目快捷创建**
+## 脚手架命令
 
-- `projectName` 为想要创建的项目名，需要以驼峰形式
-- `projectType` 为项目所属入口，即 pages 下的大目录，目前只有 `index`
+项目提供两个脚手架命令，通过 `pnpm option` 调用。
+
+### 创建视图：`create`
+
+在已有入口下创建视图组件和路由配置。
 
 ```bash
-pnpm option create [projectName] -t [projectType]
+pnpm option create <视图名> -t <入口名>
 ```
+
+示例：
+
+```bash
+# 在 index 入口下创建 test 视图
+pnpm option create test -t index
+# 生成 src/pages/index/views/test/index.vue
+# 生成 src/pages/index/router/test.ts（自动注册到 router/index.ts）
+
+# 在 fundmarket 入口下创建 mySetting 视图
+pnpm option create mySetting -t fundmarket
+```
+
+参数说明：
+
+| 参数          | 说明                 | 示例                  |
+| ------------- | -------------------- | --------------------- |
+| `<视图名>`    | 视图组件名，驼峰形式 | `test`、`mySetting`   |
+| `-t <入口名>` | 所属页面入口目录名   | `index`、`fundmarket` |
+
+### 创建入口：`add entry`
+
+创建全新的页面入口，自动生成入口必需的文件和目录。
+
+```bash
+pnpm option add entry <入口名>
+```
+
+示例：
+
+```bash
+pnpm option add entry mypage
+# 生成：
+# src/pages/mypage/index.html        # HTML 壳
+# src/pages/mypage/main.ts           # 入口文件
+# src/pages/mypage/App.vue           # 根组件（含 router-view）
+# src/pages/mypage/router/index.ts   # 路由配置（空壳）
+# src/pages/mypage/views/            # 视图组件目录
+# src/pages/mypage/components/       # 公共组件目录
+```
+
+参数说明：
+
+| 参数 | 说明 | 示例 |
+|------|------|------|
+| `<入口名>` | 页面入口名，小写英文 | `fundmarket`、`mypage` |
+
+> 新入口创建后重启 dev server 即可通过 `http://localhost:5173/<入口名>.html#/` 访问。
+
+> `config/viteConfig.ts` 的 `readPages()` 会自动扫描识别，无需手动配置。
+
+### 创建组件：`add view`
+
+在已有入口下创建视图组件，路由配置直接写入 `router/index.ts`（不建独立路由文件）。
+
+```bash
+pnpm option add view <视图名> -t <入口名>
+```
+
+示例：
+
+```bash
+# 在 index 入口下创建 testView 视图，路由直接注册
+pnpm option add view testView -t index
+# 生成 src/pages/index/views/testView/index.vue
+# 路由对象直接写入 src/pages/index/router/index.ts（无独立文件）
+
+# 在 fundmarket 入口下创建 mySetting 视图
+pnpm option add view mySetting -t fundmarket
+```
+
+参数说明：
+
+| 参数          | 说明                 | 示例                  |
+| ------------- | -------------------- | --------------------- |
+| `<视图名>`    | 视图组件名，驼峰形式 | `testView`、`mySetting` |
+| `-t <入口名>` | 所属页面入口目录名   | `index`、`fundmarket` |
+
+> `add view` 与 `create` 的区别：`create` 创建独立的 `router/<name>.ts` 路由文件并自动注册，`add view` 不建路由文件，直接将路由定义写入 `router/index.ts`。
 
 ### 构建部署
 
