@@ -50,26 +50,6 @@ pnpm add [package] -D
 pnpm option create [projectName] -t [projectType]
 ```
 
-## 多入口访问
-
-`src/pages/` 下每个目录是一个独立页面入口，开发时通过短路径直接访问：
-
-| 浏览器地址         | 对应页面 | 实际模板路径                      |
-| ------------------ | -------- | --------------------------------- |
-| `/`                | 首页     | `src/pages/index/index.html`      |
-| `/index`           | 同上     | 同上                              |
-| `/fundmarket`      | 基金页   | `src/pages/fundmarket/index.html` |
-| `/fundmarket.html` | 同上     | 同上                              |
-
-### 新建入口步骤
-
-1. 在 `src/pages/` 下创建目录，如 `src/pages/my-page/`
-2. 创建 `index.html`、`main.ts`、`App.vue`、`router/index.ts`
-3. 重启 dev server，访问 `http://localhost:5173/my-page`
-
-> `config/viteConfig.ts` 的 `readPages()` 会自动扫描新入口，
-> 三个输出函数 `getEntryPath()`、`getPagesConfig()`、`getPageShortUrls()` 同步更新。
-
 ### 构建部署
 
 ```bash
