@@ -1,0 +1,4354 @@
+{
+  "version": "2.14",
+  "children": [
+    {
+      "type": "frame",
+      "id": "ydZlc",
+      "x": 415,
+      "y": 0,
+      "name": "FundCard",
+      "reusable": true,
+      "width": 351,
+      "fill": "#FFFFFF",
+      "cornerRadius": 16,
+      "effect": {
+        "type": "shadow",
+        "shadowType": "outer",
+        "color": "#00000008",
+        "offset": {
+          "x": 0,
+          "y": 2
+        },
+        "blur": 8
+      },
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "bO8oE",
+          "name": "标题行",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 4,
+          "padding": [
+            16,
+            16,
+            12,
+            16
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "PXAao",
+              "name": "基金名称",
+              "fill": "#1A1D26",
+              "content": "基金名称",
+              "fontFamily": "Inter",
+              "fontSize": 15,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "L3rxGU",
+              "name": "基金代码",
+              "fill": "#B8BBC6",
+              "content": "000000",
+              "fontFamily": "Inter",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "rectangle",
+          "id": "G9NQk",
+          "name": "分割线",
+          "fill": "#F0F0F5",
+          "width": "fill_container",
+          "height": 1
+        },
+        {
+          "type": "frame",
+          "id": "gnLUs",
+          "name": "估值行",
+          "width": "fill_container",
+          "gap": 6,
+          "padding": [
+            12,
+            16,
+            0,
+            16
+          ],
+          "alignItems": "end",
+          "children": [
+            {
+              "type": "text",
+              "id": "Yl4xH",
+              "name": "估值标签",
+              "fill": "#8C8FA6",
+              "content": "估值",
+              "fontFamily": "Inter",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "xFhQG",
+              "name": "估值数字",
+              "fill": "#1A1D26",
+              "content": "2.3456",
+              "fontFamily": "Inter",
+              "fontSize": 22,
+              "fontWeight": "700",
+              "letterSpacing": -0.5
+            },
+            {
+              "type": "text",
+              "id": "AKSgA",
+              "name": "涨跌幅",
+              "fill": "#E74C3C",
+              "content": "+3.21%",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "600"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "vVsXW",
+          "name": "收益行",
+          "width": "fill_container",
+          "padding": [
+            6,
+            16,
+            16,
+            16
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "ZJrcT",
+              "name": "左收益",
+              "layout": "vertical",
+              "gap": 4,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "XDruD",
+                  "name": "单日收益",
+                  "fill": "#E74C3C",
+                  "content": "+123.45 今日",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "K3oFfT",
+                  "name": "持有收益",
+                  "fill": "#1A1D26",
+                  "content": "+567.89 持有",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "vtybo",
+              "name": "编辑按钮",
+              "width": 56,
+              "height": 28,
+              "fill": "#EEF1FF",
+              "cornerRadius": 8,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "jI6tu",
+                  "name": "编辑文字",
+                  "fill": "#4F6CF7",
+                  "content": "编辑",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "500"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "A7igPN",
+      "x": 806,
+      "y": 0,
+      "name": "StockRow",
+      "reusable": true,
+      "width": 319,
+      "fill": "#00000000",
+      "children": [
+        {
+          "type": "frame",
+          "id": "dgL1D",
+          "name": "左列",
+          "width": 140,
+          "layout": "vertical",
+          "gap": 2,
+          "children": [
+            {
+              "type": "text",
+              "id": "fLoiy",
+              "name": "股票名称",
+              "fill": "#1A1D26",
+              "content": "股票",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "500"
+            },
+            {
+              "type": "text",
+              "id": "WCsCV",
+              "name": "股票代码",
+              "fill": "#B8BBC6",
+              "content": "000000",
+              "fontFamily": "Inter",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "E9C86",
+          "name": "中列",
+          "width": 80,
+          "layout": "vertical",
+          "gap": 2,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "TJqos",
+              "name": "占比",
+              "fill": "#8C8FA6",
+              "content": "0.00%",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "y2JN9",
+              "name": "占标签",
+              "fill": "#B8BBC6",
+              "content": "占净值",
+              "fontFamily": "Inter",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "tLBCV",
+          "name": "右列",
+          "width": 80,
+          "layout": "vertical",
+          "gap": 2,
+          "alignItems": "end",
+          "children": [
+            {
+              "type": "text",
+              "id": "qc1Qa",
+              "name": "现价",
+              "fill": "#1A1D26",
+              "content": "0.00",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "500"
+            },
+            {
+              "type": "text",
+              "id": "X84RB",
+              "name": "涨跌",
+              "fill": "#E74C3C",
+              "content": "+0.00%",
+              "fontFamily": "Inter",
+              "fontSize": 11,
+              "fontWeight": "600"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "x1FO3c",
+      "x": 1524,
+      "y": 0,
+      "name": "TabBar-2tab",
+      "reusable": true,
+      "width": 375,
+      "height": 56,
+      "fill": "#FFFFFF",
+      "effect": {
+        "type": "shadow",
+        "shadowType": "outer",
+        "color": "#0000000D",
+        "offset": {
+          "x": 0,
+          "y": -2
+        },
+        "blur": 10
+      },
+      "children": [
+        {
+          "type": "frame",
+          "id": "fZDZY",
+          "name": "Tab基金",
+          "width": 187.5,
+          "height": 56,
+          "layout": "vertical",
+          "gap": 2,
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "icon",
+              "id": "T54zF",
+              "name": "基金图标",
+              "width": 20,
+              "height": 20,
+              "icon": "trending-up",
+              "library": "lucide",
+              "fill": "#4F6CF7"
+            },
+            {
+              "type": "text",
+              "id": "JJasg",
+              "name": "基金标签",
+              "fill": "#4F6CF7",
+              "content": "基金",
+              "fontFamily": "Inter",
+              "fontSize": 10,
+              "fontWeight": "600"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "uArnH",
+          "name": "Tab行情",
+          "width": 187.5,
+          "height": 56,
+          "layout": "vertical",
+          "gap": 2,
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "icon",
+              "id": "jK4qq",
+              "name": "行情图标",
+              "width": 20,
+              "height": 20,
+              "icon": "chart-bar",
+              "library": "lucide",
+              "fill": "#B8BBC6"
+            },
+            {
+              "type": "text",
+              "id": "vaayH",
+              "name": "行情标签",
+              "fill": "#B8BBC6",
+              "content": "行情",
+              "fontFamily": "Inter",
+              "fontSize": 10,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "Jp6Ne",
+      "x": 1959,
+      "y": 0,
+      "name": "基金列表",
+      "clip": true,
+      "width": 375,
+      "height": 812,
+      "fill": "#F2F3F7",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "sqAzZ",
+          "name": "状态栏",
+          "width": "fill_container",
+          "height": 44,
+          "fill": "#F2F3F7",
+          "padding": [
+            0,
+            20
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "y7jSi",
+              "name": "时间",
+              "fill": "#1A1D26",
+              "content": "9:41",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "wZh2p",
+              "name": "图标组",
+              "gap": 5,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "qGObO",
+                  "name": "信号",
+                  "width": 15,
+                  "height": 15,
+                  "icon": "signal",
+                  "library": "lucide",
+                  "fill": "#1A1D26"
+                },
+                {
+                  "type": "icon",
+                  "id": "P0pKj",
+                  "name": "WiFi",
+                  "width": 15,
+                  "height": 15,
+                  "icon": "wifi",
+                  "library": "lucide",
+                  "fill": "#1A1D26"
+                },
+                {
+                  "type": "icon",
+                  "id": "ihWkh",
+                  "name": "电池",
+                  "width": 22,
+                  "height": 15,
+                  "icon": "battery-full",
+                  "library": "lucide",
+                  "fill": "#1A1D26"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "XU5D9",
+          "name": "下拉刷新提示",
+          "width": "fill_container",
+          "height": 36,
+          "gap": 6,
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "icon",
+              "id": "t0bta",
+              "name": "下拉箭头",
+              "width": 14,
+              "height": 14,
+              "icon": "arrow-down",
+              "library": "lucide",
+              "fill": "#B8BBC6"
+            },
+            {
+              "type": "text",
+              "id": "Slakx",
+              "name": "下拉文字",
+              "fill": "#B8BBC6",
+              "content": "下拉刷新数据",
+              "fontFamily": "Inter",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "okNSj",
+          "name": "导航栏",
+          "width": "fill_container",
+          "height": 48,
+          "fill": "#FFFFFF",
+          "padding": [
+            0,
+            20
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "jkYko",
+              "name": "标题",
+              "fill": "#1A1D26",
+              "content": "我的基金",
+              "fontFamily": "Inter",
+              "fontSize": 18,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "gd0qr",
+              "name": "添加按钮",
+              "width": 32,
+              "height": 32,
+              "fill": "#EEF1FF",
+              "cornerRadius": 8,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "OOQ09",
+                  "name": "加号",
+                  "width": 18,
+                  "height": 18,
+                  "icon": "plus",
+                  "library": "lucide",
+                  "fill": "#4F6CF7"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "KLMBL",
+          "name": "总览卡片",
+          "width": "fill_container",
+          "padding": [
+            16,
+            20,
+            0,
+            20
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "hnaja",
+              "name": "总览内容",
+              "width": "fill_container",
+              "height": 88,
+              "fill": "#4F6CF7",
+              "cornerRadius": 16,
+              "padding": 20,
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Y2Mnd",
+                  "name": "左列",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "qYb2W",
+                      "name": "总资产标签",
+                      "opacity": 0.7,
+                      "fill": "#FFFFFF",
+                      "content": "总资产 (元)",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "veWYF",
+                      "name": "总金额",
+                      "fill": "#FFFFFF",
+                      "content": "12,345.67",
+                      "fontFamily": "Inter",
+                      "fontSize": 26,
+                      "fontWeight": "700",
+                      "letterSpacing": -0.5
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Ph6XD",
+                  "name": "右列",
+                  "layout": "vertical",
+                  "gap": 2,
+                  "alignItems": "end",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "W1PBku",
+                      "name": "今日收益标签",
+                      "opacity": 0.7,
+                      "fill": "#FFFFFF",
+                      "content": "今日收益",
+                      "fontFamily": "Inter",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "ovTb6",
+                      "name": "今日收益值",
+                      "fill": "#FFFFFF",
+                      "content": "+¥123.45",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "d15O7P",
+                      "name": "持有收益率",
+                      "opacity": 0.85,
+                      "fill": "#FFFFFF",
+                      "content": "持有收益率 +7.78%",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "X3GbnT",
+          "name": "列表标题行",
+          "width": "fill_container",
+          "padding": [
+            20,
+            20,
+            0,
+            20
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "pradS",
+              "name": "列表标题",
+              "fill": "#1A1D26",
+              "content": "持仓基金",
+              "fontFamily": "Inter",
+              "fontSize": 15,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "DsxLN",
+              "name": "编辑文字",
+              "fill": "#4F6CF7",
+              "content": "管理",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "500"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "LZnyP",
+          "name": "基金列表",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 10,
+          "padding": [
+            12,
+            20,
+            0,
+            20
+          ],
+          "children": [
+            {
+              "id": "D14Gz2",
+              "type": "ref",
+              "ref": "ydZlc",
+              "name": "卡片-医疗"
+            },
+            {
+              "id": "TBnr2",
+              "type": "ref",
+              "ref": "ydZlc",
+              "name": "卡片-蓝筹"
+            },
+            {
+              "id": "cHix0",
+              "type": "ref",
+              "ref": "ydZlc",
+              "name": "卡片-白酒"
+            }
+          ]
+        },
+        {
+          "id": "NPGiV",
+          "type": "ref",
+          "ref": "x1FO3c",
+          "name": "底部Tab栏",
+          "layoutPosition": "absolute",
+          "x": 0,
+          "y": 756,
+          "descendants": {
+            "T54zF": {
+              "fill": "#4F6CF7"
+            },
+            "JJasg": {
+              "fill": "#4F6CF7",
+              "fontWeight": "600"
+            },
+            "jK4qq": {
+              "fill": "#B8BBC6"
+            },
+            "vaayH": {
+              "fill": "#B8BBC6",
+              "fontWeight": "400"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "lYQf3",
+      "x": 2374,
+      "y": 0,
+      "name": "基金详情",
+      "clip": true,
+      "width": 375,
+      "height": 812,
+      "fill": "#F2F3F7",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "q6ycRF",
+          "name": "状态栏",
+          "width": "fill_container",
+          "height": 44,
+          "fill": "#F2F3F7",
+          "padding": [
+            0,
+            20
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "yS5Bx",
+              "name": "时间",
+              "fill": "#1A1D26",
+              "content": "9:41",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "CDT4x",
+              "name": "图标组",
+              "gap": 5,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "mcyPc",
+                  "name": "信号",
+                  "width": 15,
+                  "height": 15,
+                  "icon": "signal",
+                  "library": "lucide",
+                  "fill": "#1A1D26"
+                },
+                {
+                  "type": "icon",
+                  "id": "L3EZXN",
+                  "name": "WiFi",
+                  "width": 15,
+                  "height": 15,
+                  "icon": "wifi",
+                  "library": "lucide",
+                  "fill": "#1A1D26"
+                },
+                {
+                  "type": "icon",
+                  "id": "xUcIF",
+                  "name": "电池",
+                  "width": 22,
+                  "height": 15,
+                  "icon": "battery-full",
+                  "library": "lucide",
+                  "fill": "#1A1D26"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "y04I2",
+          "name": "导航栏",
+          "width": "fill_container",
+          "height": 44,
+          "fill": "#FFFFFF",
+          "padding": [
+            0,
+            20
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "wKYhM",
+              "name": "导航左",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "AoVMz",
+                  "name": "返回",
+                  "width": 22,
+                  "height": 22,
+                  "icon": "chevron-left",
+                  "library": "lucide",
+                  "fill": "#1A1D26"
+                },
+                {
+                  "type": "frame",
+                  "id": "BU2qW",
+                  "name": "标题组",
+                  "layout": "vertical",
+                  "gap": 1,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "v2L8tE",
+                      "name": "基金名称",
+                      "fill": "#1A1D26",
+                      "content": "中欧医疗健康混合A",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "OZT5W",
+                      "name": "基金代码",
+                      "fill": "#B8BBC6",
+                      "content": "003095",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "icon",
+              "id": "Q1v1M",
+              "name": "删除图标",
+              "width": 22,
+              "height": 22,
+              "icon": "trash-2",
+              "library": "lucide",
+              "fill": "#E74C3C"
+            }
+          ]
+        },
+        {
+          "type": "rectangle",
+          "id": "DXcD1",
+          "name": "分割线",
+          "fill": "#F0F0F5",
+          "width": "fill_container",
+          "height": 1
+        },
+        {
+          "type": "frame",
+          "id": "J6pUsZ",
+          "name": "滚动内容",
+          "width": "fill_container",
+          "height": 710,
+          "layout": "vertical",
+          "gap": 14,
+          "padding": [
+            16,
+            16,
+            0,
+            16
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "tZvm1",
+              "name": "实时估值区",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 14,
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "DZyII",
+                  "name": "估值头部",
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "TCh8R",
+                      "name": "估值左",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "c5v1dX",
+                          "name": "估值标题",
+                          "fill": "#8C8FA6",
+                          "content": "实时估值",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "jcf8K",
+                          "name": "估值数字行",
+                          "gap": 8,
+                          "alignItems": "end",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "M3N3UE",
+                              "name": "估值数字",
+                              "fill": "#1A1D26",
+                              "content": "2.3456",
+                              "fontFamily": "Inter",
+                              "fontSize": 28,
+                              "fontWeight": "700",
+                              "letterSpacing": -1
+                            },
+                            {
+                              "type": "text",
+                              "id": "N1Tekb",
+                              "name": "涨跌幅",
+                              "fill": "#E74C3C",
+                              "content": "+3.21%",
+                              "fontFamily": "Inter",
+                              "fontSize": 16,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "YLERo",
+                      "name": "估值右",
+                      "layout": "vertical",
+                      "gap": 2,
+                      "alignItems": "end",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "d3FmL",
+                          "name": "预估今日",
+                          "fill": "#B8BBC6",
+                          "content": "预估今日",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "e1JIq",
+                          "name": "预估值",
+                          "fill": "#E74C3C",
+                          "content": "+123.45",
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Z5Nap",
+                  "name": "走势图",
+                  "width": "fill_container",
+                  "height": 96,
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "path",
+                      "id": "HVrkN",
+                      "layoutPosition": "absolute",
+                      "x": 0,
+                      "y": 0,
+                      "name": "曲线",
+                      "geometry": "M0 55c30 0 40-25 60-25 20 0 35 18 55 18 20 0 35-23 55-23 20 0 35 15 55 15 20 0 35-25 55-25 15 0 20-7 23-7",
+                      "viewBox": [
+                        0,
+                        0,
+                        303,
+                        80
+                      ],
+                      "fill": "#00000000",
+                      "width": 303,
+                      "height": 80,
+                      "stroke": "#4F6CF7",
+                      "strokeWidth": 2
+                    },
+                    {
+                      "type": "path",
+                      "id": "CWedr",
+                      "layoutPosition": "absolute",
+                      "x": 0,
+                      "y": 0,
+                      "name": "填充",
+                      "opacity": 0.06,
+                      "geometry": "M0 55c30 0 40-25 60-25 20 0 35 18 55 18 20 0 35-23 55-23 20 0 35 15 55 15 20 0 35-25 55-25 15 0 20-7 23-7l0 72-303 0z",
+                      "viewBox": [
+                        0,
+                        0,
+                        303,
+                        80
+                      ],
+                      "fill": "#4F6CF7",
+                      "width": 303,
+                      "height": 80
+                    },
+                    {
+                      "type": "frame",
+                      "id": "dtHtb",
+                      "layoutPosition": "absolute",
+                      "x": 0,
+                      "y": 80,
+                      "name": "X轴",
+                      "width": 303,
+                      "height": 16,
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "cxsvM",
+                          "name": "t1",
+                          "fill": "#B8BBC6",
+                          "content": "9:30",
+                          "fontFamily": "Inter",
+                          "fontSize": 10,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Pn3SR",
+                          "name": "t2",
+                          "fill": "#B8BBC6",
+                          "content": "10:30",
+                          "fontFamily": "Inter",
+                          "fontSize": 10,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "W4XZFh",
+                          "name": "t3",
+                          "fill": "#B8BBC6",
+                          "content": "11:30",
+                          "fontFamily": "Inter",
+                          "fontSize": 10,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "t3qU6M",
+                          "name": "t4",
+                          "fill": "#B8BBC6",
+                          "content": "14:00",
+                          "fontFamily": "Inter",
+                          "fontSize": 10,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "m8TKk",
+                          "name": "t5",
+                          "fill": "#B8BBC6",
+                          "content": "15:00",
+                          "fontFamily": "Inter",
+                          "fontSize": 10,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "kiBCA",
+              "name": "业绩走势区",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 14,
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "O8zuIf",
+                  "name": "标题",
+                  "fill": "#8C8FA6",
+                  "content": "业绩走势",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "SPh5M",
+                  "name": "时段选择",
+                  "width": "fill_container",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "oTc9j",
+                      "name": "近1月",
+                      "width": 54,
+                      "height": 28,
+                      "fill": "#4F6CF7",
+                      "cornerRadius": 14,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "s9NdRH",
+                          "name": "1月",
+                          "fill": "#FFFFFF",
+                          "content": "近1月",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "OSR0X",
+                      "name": "近3月",
+                      "width": 54,
+                      "height": 28,
+                      "fill": "#F5F6FA",
+                      "cornerRadius": 14,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "jR2S3",
+                          "name": "3月",
+                          "fill": "#8C8FA6",
+                          "content": "近3月",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "W5KP0",
+                      "name": "近6月",
+                      "width": 54,
+                      "height": 28,
+                      "fill": "#F5F6FA",
+                      "cornerRadius": 14,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "iPkoI",
+                          "name": "6月",
+                          "fill": "#8C8FA6",
+                          "content": "近6月",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ppfOt",
+                      "name": "近1年",
+                      "width": 54,
+                      "height": 28,
+                      "fill": "#F5F6FA",
+                      "cornerRadius": 14,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "DtsZq",
+                          "name": "1年",
+                          "fill": "#8C8FA6",
+                          "content": "近1年",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "zkeQb",
+                      "name": "近3年",
+                      "width": 54,
+                      "height": 28,
+                      "fill": "#F5F6FA",
+                      "cornerRadius": 14,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ffaIS",
+                          "name": "3年",
+                          "fill": "#8C8FA6",
+                          "content": "近3年",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "zxC4j",
+                  "name": "业绩走势图",
+                  "width": "fill_container",
+                  "height": 110,
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "path",
+                      "id": "Wjdas",
+                      "layoutPosition": "absolute",
+                      "x": 0,
+                      "y": 0,
+                      "name": "走线",
+                      "geometry": "M0 75c40 0 55-20 85-20 30 0 45-15 75-15 30 0 45-15 75-15 25 0 40 10 60 10 5 0 7-5 8-5",
+                      "viewBox": [
+                        0,
+                        0,
+                        303,
+                        90
+                      ],
+                      "fill": "#00000000",
+                      "width": 303,
+                      "height": 90,
+                      "stroke": "#F39C12",
+                      "strokeWidth": 2
+                    },
+                    {
+                      "type": "path",
+                      "id": "GPC4k",
+                      "layoutPosition": "absolute",
+                      "x": 0,
+                      "y": 0,
+                      "name": "填色",
+                      "opacity": 0.06,
+                      "geometry": "M0 75c40 0 55-20 85-20 30 0 45-15 75-15 30 0 45-15 75-15 25 0 40 10 60 10 5 0 7-5 8-5l0 60-303 0z",
+                      "viewBox": [
+                        0,
+                        0,
+                        303,
+                        90
+                      ],
+                      "fill": "#F39C12",
+                      "width": 303,
+                      "height": 90
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "wejHz",
+              "name": "收益区",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 14,
+              "layout": "vertical",
+              "gap": 10,
+              "padding": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "mGGVK",
+                  "name": "标题",
+                  "fill": "#8C8FA6",
+                  "content": "我的收益",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "nUhRd",
+                  "name": "收益网格",
+                  "width": "fill_container",
+                  "gap": 20,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "y9tTl",
+                      "name": "左列",
+                      "width": 140,
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "uzoor",
+                          "name": "持仓成本标",
+                          "fill": "#B8BBC6",
+                          "content": "持仓成本",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "n3eGT",
+                          "name": "持仓成本值",
+                          "fill": "#1A1D26",
+                          "content": "1,234.56",
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "U3MYDy",
+                          "name": "市值标",
+                          "fill": "#B8BBC6",
+                          "content": "当前市值",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "B5HczC",
+                          "name": "市值值",
+                          "fill": "#1A1D26",
+                          "content": "1,567.89",
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "pEEXa",
+                      "name": "右列",
+                      "width": 140,
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "cH5om",
+                          "name": "持有收益标",
+                          "fill": "#B8BBC6",
+                          "content": "持有收益",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Ds3bn",
+                          "name": "持有收益值",
+                          "fill": "#E74C3C",
+                          "content": "+333.33",
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "w023k",
+                          "name": "收益率标",
+                          "fill": "#B8BBC6",
+                          "content": "收益率",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "ju7DM",
+                          "name": "收益率值",
+                          "fill": "#E74C3C",
+                          "content": "+26.99%",
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "lq4Zl",
+              "name": "持仓股票区",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 14,
+              "layout": "vertical",
+              "gap": 10,
+              "padding": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "ouaxD",
+                  "name": "标题",
+                  "fill": "#8C8FA6",
+                  "content": "持仓股票",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "id": "JUnfL",
+                  "type": "ref",
+                  "ref": "A7igPN",
+                  "name": "股票-茅台"
+                },
+                {
+                  "type": "rectangle",
+                  "id": "cDpcM",
+                  "name": "分1",
+                  "fill": "#F0F0F5",
+                  "width": "fill_container",
+                  "height": 1
+                },
+                {
+                  "id": "X6lShU",
+                  "type": "ref",
+                  "ref": "A7igPN",
+                  "name": "股票-宁德"
+                },
+                {
+                  "type": "rectangle",
+                  "id": "G70WML",
+                  "name": "分2",
+                  "fill": "#F0F0F5",
+                  "width": "fill_container",
+                  "height": 1
+                },
+                {
+                  "id": "EBvGl",
+                  "type": "ref",
+                  "ref": "A7igPN",
+                  "name": "股票-招行"
+                },
+                {
+                  "type": "rectangle",
+                  "id": "V15m1q",
+                  "name": "分3",
+                  "fill": "#F0F0F5",
+                  "width": "fill_container",
+                  "height": 1
+                },
+                {
+                  "id": "f0wP0X",
+                  "type": "ref",
+                  "ref": "A7igPN",
+                  "name": "股票-五粮液"
+                },
+                {
+                  "type": "rectangle",
+                  "id": "x7bho",
+                  "name": "分4",
+                  "fill": "#F0F0F5",
+                  "width": "fill_container",
+                  "height": 1
+                },
+                {
+                  "id": "o5rso",
+                  "type": "ref",
+                  "ref": "A7igPN",
+                  "name": "股票-迈瑞"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "yRWIe",
+      "x": 2789,
+      "y": 0,
+      "name": "行情",
+      "clip": true,
+      "width": 375,
+      "height": 812,
+      "fill": "#F2F3F7",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "EzmJq",
+          "name": "状态栏",
+          "width": "fill_container",
+          "height": 44,
+          "fill": "#F2F3F7",
+          "padding": [
+            0,
+            20
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "f77GBm",
+              "name": "时间",
+              "fill": "#1A1D26",
+              "content": "9:41",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "Stda5",
+              "name": "图标组",
+              "gap": 5,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "aiuQ6",
+                  "name": "信号",
+                  "width": 15,
+                  "height": 15,
+                  "icon": "signal",
+                  "library": "lucide",
+                  "fill": "#1A1D26"
+                },
+                {
+                  "type": "icon",
+                  "id": "pNvCm",
+                  "name": "WiFi",
+                  "width": 15,
+                  "height": 15,
+                  "icon": "wifi",
+                  "library": "lucide",
+                  "fill": "#1A1D26"
+                },
+                {
+                  "type": "icon",
+                  "id": "SB0Jl",
+                  "name": "电池",
+                  "width": 22,
+                  "height": 15,
+                  "icon": "battery-full",
+                  "library": "lucide",
+                  "fill": "#1A1D26"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "hDKnb",
+          "name": "导航栏",
+          "width": "fill_container",
+          "height": 44,
+          "fill": "#F2F3F7",
+          "padding": [
+            0,
+            20
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "Uz5U2",
+              "name": "标题",
+              "fill": "#1A1D26",
+              "content": "行情",
+              "fontFamily": "Inter",
+              "fontSize": 20,
+              "fontWeight": "700"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Wnjxr",
+          "name": "内容",
+          "width": "fill_container",
+          "height": 668,
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            16,
+            16,
+            0,
+            16
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "B2XcKB",
+              "name": "Tab栏",
+              "width": "fill_container",
+              "fill": "#F0F1F5",
+              "cornerRadius": 8,
+              "padding": 2,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "f09nWT",
+                  "name": "A股",
+                  "width": 109.6,
+                  "height": 32,
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 7,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#0000000A",
+                    "offset": {
+                      "x": 0,
+                      "y": 1
+                    },
+                    "blur": 4
+                  },
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "DzIgM",
+                      "name": "A文字",
+                      "fill": "#1A1D26",
+                      "content": "A股",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "vnUr8",
+                  "name": "港股",
+                  "width": 109.6,
+                  "height": 32,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Em9NX",
+                      "name": "H文字",
+                      "fill": "#8C8FA6",
+                      "content": "港股",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "o2iS8j",
+                  "name": "美股",
+                  "width": 109.6,
+                  "height": 32,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "zNT6O",
+                      "name": "U文字",
+                      "fill": "#8C8FA6",
+                      "content": "美股",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "FyUcn",
+              "name": "涨跌分布",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 12,
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "CDlIf",
+                  "name": "涨跌头部",
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "A3E9Z",
+                      "name": "标题",
+                      "fill": "#1A1D26",
+                      "content": "涨跌分布",
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "KhGmy",
+                      "name": "总数",
+                      "fill": "#B8BBC6",
+                      "content": "1,890 只",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "nFs2z",
+                  "name": "比例条",
+                  "width": "fill_container",
+                  "height": 8,
+                  "cornerRadius": 4,
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": [
+                        4,
+                        0,
+                        0,
+                        4
+                      ],
+                      "id": "Ssmim",
+                      "name": "红条",
+                      "fill": "#E74C3C",
+                      "width": 203,
+                      "height": 8
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "Z5ksU",
+                      "name": "绿条",
+                      "fill": "#27AE60",
+                      "width": 93,
+                      "height": 8
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": [
+                        0,
+                        4,
+                        4,
+                        0
+                      ],
+                      "id": "zvelO",
+                      "name": "灰条",
+                      "fill": "#F0F0F5",
+                      "width": 15,
+                      "height": 8
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "rtMoL",
+                  "name": "涨跌块行",
+                  "width": "fill_container",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "WllkP",
+                      "name": "上涨块",
+                      "width": 98,
+                      "height": 28,
+                      "fill": "#FFF0EE",
+                      "cornerRadius": 14,
+                      "gap": 4,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "r1aTdH",
+                          "name": "涨数",
+                          "fill": "#E74C3C",
+                          "content": "1,234",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "HgCSF",
+                          "name": "涨标",
+                          "fill": "#E74C3C",
+                          "content": "涨",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Migde",
+                      "name": "下跌块",
+                      "width": 98,
+                      "height": 28,
+                      "fill": "#EDFBF4",
+                      "cornerRadius": 14,
+                      "gap": 4,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "M4FFa",
+                          "name": "跌数",
+                          "fill": "#27AE60",
+                          "content": "567",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "D9cWt",
+                          "name": "跌标",
+                          "fill": "#27AE60",
+                          "content": "跌",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "D8Kzi",
+                      "name": "平盘块",
+                      "width": 98,
+                      "height": 28,
+                      "fill": "#F5F6FA",
+                      "cornerRadius": 14,
+                      "gap": 4,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "PGRX4",
+                          "name": "平数",
+                          "fill": "#8C8FA6",
+                          "content": "89",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "N8gBc",
+                          "name": "平标",
+                          "fill": "#8C8FA6",
+                          "content": "平",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "jpib1",
+              "name": "行情概览",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 16,
+              "padding": 20,
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "xDMKV",
+                  "name": "左侧",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "U0uYp",
+                      "name": "指数名称",
+                      "fill": "#8C8FA6",
+                      "content": "上证指数",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Ywbwu",
+                      "name": "数字组",
+                      "gap": 10,
+                      "alignItems": "end",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "n9SmI",
+                          "name": "点数",
+                          "fill": "#1A1D26",
+                          "content": "3,285.75",
+                          "fontFamily": "Inter",
+                          "fontSize": 32,
+                          "fontWeight": "700",
+                          "letterSpacing": -0.5
+                        },
+                        {
+                          "type": "text",
+                          "id": "m17lQ",
+                          "name": "涨跌幅",
+                          "fill": "#E74C3C",
+                          "content": "+0.85%",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "EZxBV",
+                      "name": "涨跌点",
+                      "fill": "#E74C3C",
+                      "content": "上涨 27.62 点",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Kgl9C",
+                  "name": "右侧",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "path",
+                      "id": "d8LXXv",
+                      "name": "迷你走势",
+                      "geometry": "M0 32c12 0 16-10 26-10 10 0 16-10 26-10 6 0 10-4 16-4",
+                      "viewBox": [
+                        0,
+                        0,
+                        68,
+                        40
+                      ],
+                      "fill": "#00000000",
+                      "width": 68,
+                      "height": 40,
+                      "stroke": "#E74C3C",
+                      "strokeWidth": 1.5
+                    },
+                    {
+                      "type": "text",
+                      "id": "p853U",
+                      "name": "状态",
+                      "fill": "#27AE60",
+                      "content": "● 交易中",
+                      "fontFamily": "Inter",
+                      "fontSize": 10,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "OubBj",
+              "name": "指数列表",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 16,
+              "layout": "vertical",
+              "padding": 4,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "nZDiR",
+                  "name": "顶栏",
+                  "width": "fill_container",
+                  "padding": 12,
+                  "justifyContent": "space_between",
+                  "alignItems": "end",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "gN4zU",
+                      "name": "标题",
+                      "fill": "#1A1D26",
+                      "content": "主要指数",
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "zTkok",
+                      "name": "更新时间",
+                      "fill": "#B8BBC6",
+                      "content": "实时",
+                      "fontFamily": "Inter",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "FSpMo",
+                  "name": "深证",
+                  "width": "fill_container",
+                  "fill": "#00000000",
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "kNHsL",
+                      "name": "左列",
+                      "width": 140,
+                      "height": 42,
+                      "layout": "vertical",
+                      "gap": 3,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "CK5Fo",
+                          "name": "指数名称",
+                          "fill": "#1A1D26",
+                          "content": "深证成指",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "brn1n",
+                          "name": "指数状态",
+                          "fill": "#27AE60",
+                          "content": "交易中",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "l2MDN",
+                      "name": "中列",
+                      "width": 80,
+                      "height": 42,
+                      "layout": "vertical",
+                      "gap": 3,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "kFj9m",
+                          "name": "点位",
+                          "fill": "#1A1D26",
+                          "content": "10,432.50",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "wEN10",
+                          "name": "占位",
+                          "fill": "#00000000",
+                          "content": "-",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "rectangle",
+                  "id": "y2tgy",
+                  "name": "分隔2",
+                  "fill": "#F0F0F5",
+                  "width": "fill_container",
+                  "height": 1
+                },
+                {
+                  "type": "frame",
+                  "id": "p31gsU",
+                  "name": "创业板",
+                  "width": "fill_container",
+                  "fill": "#00000000",
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "LeNLX",
+                      "name": "左列",
+                      "width": 140,
+                      "height": 42,
+                      "layout": "vertical",
+                      "gap": 3,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "iq6Yq",
+                          "name": "指数名称",
+                          "fill": "#1A1D26",
+                          "content": "创业板指",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "MtwaW",
+                          "name": "指数状态",
+                          "fill": "#27AE60",
+                          "content": "交易中",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "iwzSO",
+                      "name": "中列",
+                      "width": 80,
+                      "height": 42,
+                      "layout": "vertical",
+                      "gap": 3,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "K8Um6K",
+                          "name": "点位",
+                          "fill": "#1A1D26",
+                          "content": "2,156.80",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "OPviD",
+                          "name": "占位",
+                          "fill": "#00000000",
+                          "content": "-",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "rectangle",
+                  "id": "V4D8oZ",
+                  "name": "分隔3",
+                  "fill": "#F0F0F5",
+                  "width": "fill_container",
+                  "height": 1
+                },
+                {
+                  "type": "frame",
+                  "id": "NkcS8",
+                  "name": "科创",
+                  "width": "fill_container",
+                  "fill": "#00000000",
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Qg1WB",
+                      "name": "左列",
+                      "width": 140,
+                      "height": 42,
+                      "layout": "vertical",
+                      "gap": 3,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "pOGx0",
+                          "name": "指数名称",
+                          "fill": "#1A1D26",
+                          "content": "科创50",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "GRGsu",
+                          "name": "指数状态",
+                          "fill": "#27AE60",
+                          "content": "交易中",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "m9sMk",
+                      "name": "中列",
+                      "width": 80,
+                      "height": 42,
+                      "layout": "vertical",
+                      "gap": 3,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "IveGI",
+                          "name": "点位",
+                          "fill": "#1A1D26",
+                          "content": "985.60",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "nZK4g",
+                          "name": "占位",
+                          "fill": "#00000000",
+                          "content": "-",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "rectangle",
+                  "id": "A1HFT",
+                  "name": "分隔4",
+                  "fill": "#F0F0F5",
+                  "width": "fill_container",
+                  "height": 1
+                },
+                {
+                  "type": "frame",
+                  "id": "xnMUd",
+                  "name": "沪深300",
+                  "width": "fill_container",
+                  "fill": "#00000000",
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "UDpUl",
+                      "name": "左列",
+                      "width": 140,
+                      "height": 42,
+                      "layout": "vertical",
+                      "gap": 3,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "b3ui7",
+                          "name": "指数名称",
+                          "fill": "#1A1D26",
+                          "content": "沪深300",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "firwn",
+                          "name": "指数状态",
+                          "fill": "#27AE60",
+                          "content": "交易中",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Ci6h5",
+                      "name": "中列",
+                      "width": 80,
+                      "height": 42,
+                      "layout": "vertical",
+                      "gap": 3,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "djj8N",
+                          "name": "点位",
+                          "fill": "#1A1D26",
+                          "content": "3,920.50",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Gdn1v",
+                          "name": "占位",
+                          "fill": "#00000000",
+                          "content": "-",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Kjqvv",
+              "name": "热门板块",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 16,
+              "layout": "vertical",
+              "gap": 10,
+              "padding": [
+                16,
+                16,
+                12,
+                16
+              ],
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "bEMaH",
+                  "name": "顶栏",
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "ykQfq",
+                      "name": "标题",
+                      "fill": "#1A1D26",
+                      "content": "热门板块",
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "y83LX",
+                      "name": "更多",
+                      "fill": "#B8BBC6",
+                      "content": "更多 >",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "UT1wG",
+                  "name": "板块1",
+                  "width": "fill_container",
+                  "height": 24,
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "QXrm1",
+                      "name": "名1",
+                      "fill": "#1A1D26",
+                      "content": "半导体",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 2,
+                      "id": "CRkdR",
+                      "name": "条1",
+                      "fill": "#E74C3C",
+                      "width": 60,
+                      "height": 4
+                    },
+                    {
+                      "type": "text",
+                      "id": "hB2VT",
+                      "name": "涨1",
+                      "fill": "#E74C3C",
+                      "content": "+3.45%",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "D9iXjp",
+                  "name": "板块2",
+                  "width": "fill_container",
+                  "height": 24,
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "pVlMi",
+                      "name": "名2",
+                      "fill": "#1A1D26",
+                      "content": "新能源",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 2,
+                      "id": "b8SeQB",
+                      "name": "条2",
+                      "opacity": 0.7,
+                      "fill": "#E74C3C",
+                      "width": 60,
+                      "height": 4
+                    },
+                    {
+                      "type": "text",
+                      "id": "eJFmc",
+                      "name": "涨2",
+                      "fill": "#E74C3C",
+                      "content": "+2.10%",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "mViMM",
+                  "name": "板块3",
+                  "width": "fill_container",
+                  "height": 24,
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "KhFtR",
+                      "name": "名3",
+                      "fill": "#1A1D26",
+                      "content": "医药生物",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 2,
+                      "id": "ucbdw",
+                      "name": "条3",
+                      "opacity": 0.5,
+                      "fill": "#E74C3C",
+                      "width": 60,
+                      "height": 4
+                    },
+                    {
+                      "type": "text",
+                      "id": "LjShO",
+                      "name": "涨3",
+                      "fill": "#E74C3C",
+                      "content": "+1.85%",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "r7IGS",
+                  "name": "板块4",
+                  "width": "fill_container",
+                  "height": 24,
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "dTmfG",
+                      "name": "名4",
+                      "fill": "#1A1D26",
+                      "content": "消费电子",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 2,
+                      "id": "jNjaV",
+                      "name": "条4",
+                      "fill": "#27AE60",
+                      "width": 60,
+                      "height": 4
+                    },
+                    {
+                      "type": "text",
+                      "id": "m9ml0l",
+                      "name": "涨4",
+                      "fill": "#27AE60",
+                      "content": "-0.32%",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "qT9yB",
+          "type": "ref",
+          "ref": "x1FO3c",
+          "name": "底部Tab栏",
+          "layoutPosition": "absolute",
+          "x": 0,
+          "y": 756,
+          "descendants": {
+            "T54zF": {
+              "fill": "#B8BBC6"
+            },
+            "JJasg": {
+              "fill": "#B8BBC6",
+              "fontWeight": "400"
+            },
+            "jK4qq": {
+              "fill": "#4F6CF7"
+            },
+            "vaayH": {
+              "fill": "#4F6CF7",
+              "fontWeight": "600"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "Br83W",
+      "x": 3244,
+      "y": 0,
+      "name": "截图识别弹窗",
+      "width": 375,
+      "height": 812,
+      "fill": "#00000080",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "E4kn9h",
+          "name": "背景点击区",
+          "width": "fill_container",
+          "height": "fill_container",
+          "fill": "#00000000"
+        },
+        {
+          "type": "frame",
+          "id": "B2f3aB",
+          "name": "底部卡片",
+          "width": "fill_container",
+          "fill": "#FFFFFF",
+          "cornerRadius": [
+            16,
+            16,
+            0,
+            0
+          ],
+          "layout": "vertical",
+          "gap": 20,
+          "padding": 20,
+          "children": [
+            {
+              "type": "frame",
+              "id": "BPgiI",
+              "name": "头部",
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "SwU54",
+                  "name": "标题",
+                  "fill": "#1A1D26",
+                  "content": "添加基金",
+                  "fontFamily": "Inter",
+                  "fontSize": 18,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "frame",
+                  "id": "j2LDfD",
+                  "name": "关闭按钮",
+                  "width": 32,
+                  "height": 32,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "J6GNMO",
+                      "name": "关闭图标",
+                      "width": 20,
+                      "height": 20,
+                      "icon": "x",
+                      "library": "lucide",
+                      "fill": "#8C8FA6"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "IfMDA",
+              "name": "上传区域",
+              "width": "fill_container",
+              "fill": "#F5F6FA",
+              "cornerRadius": 12,
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 32,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "UGgnZ",
+                  "name": "上传图标",
+                  "width": 40,
+                  "height": 40,
+                  "icon": "image-plus",
+                  "library": "lucide",
+                  "fill": "#B8BBC6"
+                },
+                {
+                  "type": "text",
+                  "id": "O17SA",
+                  "name": "上传文案",
+                  "fill": "#8C8FA6",
+                  "content": "点击上传支付宝资产截图",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "tRSXz",
+                  "name": "上传子文案",
+                  "fill": "#B8BBC6",
+                  "content": "支持 .jpg .png 格式",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "d5pWwB",
+                  "name": "手动入口",
+                  "fill": "#4F6CF7",
+                  "content": "或手动输入基金代码",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "euB6G",
+              "name": "提示行",
+              "width": "fill_container",
+              "gap": 4,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "okhsF",
+                  "name": "提示图标",
+                  "width": 16,
+                  "height": 16,
+                  "icon": "info",
+                  "library": "lucide",
+                  "fill": "#B8BBC6"
+                },
+                {
+                  "type": "text",
+                  "id": "eRtmT",
+                  "name": "提示文案",
+                  "fill": "#B8BBC6",
+                  "content": "截图需包含基金名称和持有份额",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "wQji8",
+              "name": "按钮",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#4F6CF7",
+              "cornerRadius": 12,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "xakKc",
+                  "name": "按钮文字",
+                  "fill": "#FFFFFF",
+                  "content": "从截图识别",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "cccFP",
+              "name": "识别结果区",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "mMkoy",
+                  "name": "结果头部",
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "s0sEQE",
+                      "name": "识别标题",
+                      "fill": "#1A1D26",
+                      "content": "识别到 3 只基金",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "BO14W",
+                      "name": "重新识别",
+                      "fill": "#4F6CF7",
+                      "content": "重新识别",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Y4Sug2",
+                  "name": "基金行1",
+                  "width": "fill_container",
+                  "gap": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "r8xYtL",
+                      "name": "复选框1",
+                      "width": 22,
+                      "height": 22,
+                      "fill": "#4F6CF7",
+                      "cornerRadius": 4
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Qf04b",
+                      "name": "基金信息1",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 2,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "swgWr",
+                          "name": "基金名1",
+                          "fill": "#1A1D26",
+                          "content": "中欧医疗健康混合A",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Mq0Zp",
+                          "name": "基金详情1",
+                          "fill": "#B8BBC6",
+                          "content": "003095 | 1,234.56 份",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "rectangle",
+                  "id": "zaBl6",
+                  "name": "分隔线1",
+                  "fill": "#F0F0F5",
+                  "width": "fill_container",
+                  "height": 1
+                },
+                {
+                  "type": "frame",
+                  "id": "qbQZ9",
+                  "name": "基金行2",
+                  "width": "fill_container",
+                  "gap": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "gqGHp",
+                      "name": "复选框2",
+                      "width": 22,
+                      "height": 22,
+                      "fill": "#4F6CF7",
+                      "cornerRadius": 4
+                    },
+                    {
+                      "type": "frame",
+                      "id": "J6hARD",
+                      "name": "基金信息2",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 2,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "EhGKb",
+                          "name": "基金名2",
+                          "fill": "#1A1D26",
+                          "content": "易方达蓝筹精选混合",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "FbGr1",
+                          "name": "基金详情2",
+                          "fill": "#B8BBC6",
+                          "content": "005827 | 987.65 份",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "rectangle",
+                  "id": "TEbci",
+                  "name": "分隔线2",
+                  "fill": "#F0F0F5",
+                  "width": "fill_container",
+                  "height": 1
+                },
+                {
+                  "type": "frame",
+                  "id": "yTY7v",
+                  "name": "基金行3",
+                  "width": "fill_container",
+                  "gap": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "soWHi",
+                      "name": "复选框3",
+                      "width": 22,
+                      "height": 22,
+                      "fill": "#F0F0F5",
+                      "cornerRadius": 4
+                    },
+                    {
+                      "type": "frame",
+                      "id": "pYFMS",
+                      "name": "基金信息3",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 2,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "vbH35",
+                          "name": "基金名3",
+                          "fill": "#B8BBC6",
+                          "content": "招商中证白酒指数",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "BVpqO",
+                          "name": "基金详情3",
+                          "fill": "#B8BBC6",
+                          "content": "161725 | 2,345.78 份",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "mTcmP",
+                  "name": "导入按钮",
+                  "width": "fill_container",
+                  "height": 48,
+                  "fill": "#4F6CF7",
+                  "cornerRadius": 12,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "o0p52",
+                      "name": "导入文字",
+                      "fill": "#FFFFFF",
+                      "content": "导入以上 3 只基金",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "M2VtN",
+      "x": 3699,
+      "y": 0,
+      "name": "手动添加基金",
+      "clip": true,
+      "width": 375,
+      "height": 812,
+      "fill": "#F2F3F7",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "lnSj1",
+          "name": "状态栏",
+          "width": "fill_container",
+          "height": 44,
+          "fill": "#F2F3F7",
+          "padding": [
+            0,
+            20
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "NKeRy",
+              "name": "时间",
+              "fill": "#1A1D26",
+              "content": "9:41",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "h3FOzK",
+              "name": "图标组",
+              "width": 62,
+              "height": 15,
+              "gap": 5,
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "OkR51",
+                  "name": "信号",
+                  "width": 15,
+                  "height": 15,
+                  "icon": "signal",
+                  "library": "lucide",
+                  "fill": "#1A1D26"
+                },
+                {
+                  "type": "icon",
+                  "id": "ySdoo",
+                  "name": "WiFi",
+                  "width": 15,
+                  "height": 15,
+                  "icon": "wifi",
+                  "library": "lucide",
+                  "fill": "#1A1D26"
+                },
+                {
+                  "type": "icon",
+                  "id": "cG3lr",
+                  "name": "电池",
+                  "width": 22,
+                  "height": 15,
+                  "icon": "battery-full",
+                  "library": "lucide",
+                  "fill": "#1A1D26"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "y34kQS",
+          "name": "导航栏",
+          "width": "fill_container",
+          "height": 44,
+          "fill": "#F2F3F7",
+          "padding": [
+            0,
+            16
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "icon",
+              "id": "v2Lsh",
+              "name": "返回",
+              "width": 24,
+              "height": 24,
+              "icon": "chevron-left",
+              "library": "lucide",
+              "fill": "#1A1D26"
+            },
+            {
+              "type": "text",
+              "id": "H5vvaN",
+              "name": "标题",
+              "fill": "#1A1D26",
+              "content": "手动添加基金",
+              "fontFamily": "Inter",
+              "fontSize": 17,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "lFiwx",
+              "name": "占位",
+              "width": 24,
+              "height": 24
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "RT2Ss",
+          "name": "表单区",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 20,
+          "padding": [
+            20,
+            20,
+            0,
+            20
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "Gaujf",
+              "name": "基金代码输入",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "GbSCb",
+                  "name": "标签",
+                  "fill": "#8C8FA6",
+                  "content": "基金代码",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "frame",
+                  "id": "IPX1R",
+                  "name": "输入框",
+                  "width": "fill_container",
+                  "height": 44,
+                  "fill": "#F5F6FA",
+                  "cornerRadius": 10,
+                  "padding": 16,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "ZALMa",
+                      "name": "占位符",
+                      "fill": "#B8BBC6",
+                      "content": "输入基金代码，如 003095",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "uOX5M",
+              "name": "基金名称输入",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "UxkvJ",
+                  "name": "标签",
+                  "fill": "#8C8FA6",
+                  "content": "基金名称",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "frame",
+                  "id": "pIgUN",
+                  "name": "输入框",
+                  "width": "fill_container",
+                  "height": 44,
+                  "fill": "#F5F6FA",
+                  "cornerRadius": 10,
+                  "padding": 16,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "qJMKP",
+                      "name": "占位符",
+                      "fill": "#B8BBC6",
+                      "content": "输入后自动识别",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "hYYF3",
+              "name": "投入金额输入",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "yaLrU",
+                  "name": "标签",
+                  "fill": "#8C8FA6",
+                  "content": "投入金额 (元)",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "frame",
+                  "id": "k4mS6",
+                  "name": "输入框",
+                  "width": "fill_container",
+                  "height": 44,
+                  "fill": "#F5F6FA",
+                  "cornerRadius": 10,
+                  "padding": 16,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Mvdc8",
+                      "name": "占位符",
+                      "fill": "#B8BBC6",
+                      "content": "0.00",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "bZ5UO",
+              "name": "添加按钮",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#4F6CF7",
+              "cornerRadius": 12,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "AugFd",
+                  "name": "按钮文字",
+                  "fill": "#FFFFFF",
+                  "content": "添加到我的基金",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "u314Id",
+      "x": 4154,
+      "y": 0,
+      "name": "编辑持仓弹窗",
+      "clip": true,
+      "width": 375,
+      "height": 812,
+      "fill": "#F2F3F7",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "tnJPx",
+          "name": "背景遮罩",
+          "width": "fill_container",
+          "height": "fill_container",
+          "fill": "#00000080"
+        },
+        {
+          "type": "frame",
+          "id": "C7Wtp",
+          "layoutPosition": "absolute",
+          "x": 0,
+          "y": 399,
+          "name": "底部卡片",
+          "width": 375,
+          "fill": "#FFFFFF",
+          "cornerRadius": [
+            16,
+            16,
+            0,
+            0
+          ],
+          "layout": "vertical",
+          "gap": 20,
+          "padding": 20,
+          "children": [
+            {
+              "type": "frame",
+              "id": "idy1q",
+              "name": "头部",
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "YumbE",
+                  "name": "标题",
+                  "fill": "#1A1D26",
+                  "content": "编辑持仓",
+                  "fontFamily": "Inter",
+                  "fontSize": 18,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "frame",
+                  "id": "h50N3",
+                  "name": "关闭按钮",
+                  "width": 32,
+                  "height": 32,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "Qknnj",
+                      "name": "关闭图标",
+                      "width": 20,
+                      "height": 20,
+                      "icon": "x",
+                      "library": "lucide",
+                      "fill": "#8C8FA6"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "UYvDh",
+              "name": "基金代码行",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "QDlkN",
+                  "name": "标签",
+                  "fill": "#8C8FA6",
+                  "content": "基金代码",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "frame",
+                  "id": "UqgGW",
+                  "name": "代码输入框",
+                  "width": "fill_container",
+                  "height": 44,
+                  "fill": "#F0F1F5",
+                  "cornerRadius": 10,
+                  "padding": [
+                    0,
+                    14
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "JZ9ch",
+                      "name": "代码值",
+                      "fill": "#B8BBC6",
+                      "content": "003095",
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "AyPHs",
+              "name": "基金名称行",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "VdwMF",
+                  "name": "标签",
+                  "fill": "#8C8FA6",
+                  "content": "基金名称",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "frame",
+                  "id": "X61Ws2",
+                  "name": "名称输入框",
+                  "width": "fill_container",
+                  "height": 44,
+                  "fill": "#F5F6FA",
+                  "cornerRadius": 10,
+                  "padding": [
+                    0,
+                    14
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "a2qKTE",
+                      "name": "名称值",
+                      "fill": "#1A1D26",
+                      "content": "中欧医疗健康混合A",
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "HMSTb",
+              "name": "投入金额行",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "kydhd",
+                  "name": "标签",
+                  "fill": "#8C8FA6",
+                  "content": "投入金额（元）",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "frame",
+                  "id": "k6qGM",
+                  "name": "金额输入框",
+                  "width": "fill_container",
+                  "height": 44,
+                  "fill": "#F5F6FA",
+                  "cornerRadius": 10,
+                  "padding": [
+                    0,
+                    14
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "M5Ov5",
+                      "name": "金额值",
+                      "fill": "#1A1D26",
+                      "content": "10000.00",
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "SvsnU",
+              "name": "保存按钮",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#4F6CF7",
+              "cornerRadius": 12,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "qYq1F",
+                  "name": "按钮文字",
+                  "fill": "#FFFFFF",
+                  "content": "保存",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "mWBrf",
+      "x": 4609,
+      "y": 0,
+      "name": "空状态",
+      "clip": true,
+      "width": 375,
+      "height": 812,
+      "fill": "#F2F3F7",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "lPINC",
+          "name": "状态栏",
+          "width": "fill_container",
+          "height": 44,
+          "fill": "#F2F3F7",
+          "padding": [
+            0,
+            20
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "WhhZ6",
+              "name": "时间",
+              "fill": "#1A1D26",
+              "content": "9:41",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "Rwb3e",
+              "name": "图标组",
+              "width": 62,
+              "height": 15,
+              "gap": 5,
+              "alignItems": "center"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "e7Apy",
+          "name": "导航栏",
+          "width": "fill_container",
+          "height": 48,
+          "fill": "#FFFFFF",
+          "padding": [
+            0,
+            20
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "a6krL",
+              "name": "标题",
+              "fill": "#1A1D26",
+              "content": "我的基金",
+              "fontFamily": "Inter",
+              "fontSize": 18,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "o8QBv",
+              "name": "添加按钮",
+              "width": 32,
+              "height": 32,
+              "fill": "#EEF1FF",
+              "cornerRadius": 8,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "RE9Rf",
+                  "name": "加号",
+                  "width": 18,
+                  "height": 18,
+                  "icon": "plus",
+                  "library": "lucide",
+                  "fill": "#4F6CF7"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Wkd22",
+          "name": "空内容区",
+          "width": "fill_container",
+          "height": 600,
+          "layout": "vertical",
+          "gap": 16,
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "icon",
+              "id": "kSEEQ",
+              "name": "空状态图标",
+              "width": 64,
+              "height": 64,
+              "icon": "inbox",
+              "library": "lucide",
+              "fill": "#B8BBC6"
+            },
+            {
+              "type": "text",
+              "id": "SLCDq",
+              "name": "空状态文本",
+              "fill": "#8C8FA6",
+              "content": "还没有持仓基金",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "500"
+            },
+            {
+              "type": "text",
+              "id": "SZL1K",
+              "name": "空状态子文本",
+              "fill": "#B8BBC6",
+              "content": "点击右上角 + 添加你的第一支基金",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "id": "UKPQ4",
+          "type": "ref",
+          "ref": "x1FO3c",
+          "name": "底部Tab栏",
+          "layoutPosition": "absolute",
+          "x": 0,
+          "y": 756,
+          "descendants": {
+            "T54zF": {
+              "fill": "#4F6CF7"
+            },
+            "JJasg": {
+              "fill": "#4F6CF7",
+              "fontWeight": "600"
+            },
+            "jK4qq": {
+              "fill": "#B8BBC6"
+            },
+            "vaayH": {
+              "fill": "#B8BBC6",
+              "fontWeight": "400"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "rSyXr",
+      "x": 5086,
+      "y": 0,
+      "name": "管理模式-基金列表",
+      "clip": true,
+      "width": 375,
+      "height": 812,
+      "fill": "#F2F3F7",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "FXfjK",
+          "name": "状态栏",
+          "width": "fill_container",
+          "height": 44,
+          "fill": "#F2F3F7",
+          "padding": [
+            0,
+            20
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "I9icAe",
+              "name": "时间",
+              "fill": "#1A1D26",
+              "content": "9:41",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "RJMoj",
+              "name": "图标组",
+              "width": 62,
+              "height": 15,
+              "gap": 5,
+              "alignItems": "center"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "b3p9a",
+          "name": "导航栏",
+          "width": "fill_container",
+          "height": 48,
+          "fill": "#FFFFFF",
+          "padding": [
+            0,
+            20
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "Ya0yP",
+              "name": "标题",
+              "fill": "#1A1D26",
+              "content": "我的基金",
+              "fontFamily": "Inter",
+              "fontSize": 18,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "Zgf7k",
+              "name": "占位",
+              "width": 32,
+              "height": 32
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "WJ8cT",
+          "name": "总览卡片",
+          "width": "fill_container",
+          "padding": [
+            16,
+            20,
+            0,
+            20
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "WkcCD",
+              "name": "总览内容",
+              "width": "fill_container",
+              "height": 88,
+              "fill": "#4F6CF7",
+              "cornerRadius": 16,
+              "padding": 20,
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "WwNFs",
+                  "name": "左列",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "RG8lN",
+                      "name": "总资产标签",
+                      "opacity": 0.7,
+                      "fill": "#FFFFFF",
+                      "content": "总资产 (元)",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "HoZXz",
+                      "name": "总金额",
+                      "fill": "#FFFFFF",
+                      "content": "12,345.67",
+                      "fontFamily": "Inter",
+                      "fontSize": 26,
+                      "fontWeight": "700",
+                      "letterSpacing": -0.5
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "QUx22",
+                  "name": "右列",
+                  "layout": "vertical",
+                  "gap": 2,
+                  "alignItems": "end",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "qSHou",
+                      "name": "今日收益标签",
+                      "opacity": 0.7,
+                      "fill": "#FFFFFF",
+                      "content": "今日收益",
+                      "fontFamily": "Inter",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "ErPQF",
+                      "name": "今日收益值",
+                      "fill": "#FFFFFF",
+                      "content": "+¥123.45",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Po4FV",
+                      "name": "持有收益率",
+                      "opacity": 0.85,
+                      "fill": "#FFFFFF",
+                      "content": "持有收益率 +7.78%",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "ugSKt",
+          "name": "列表标题行",
+          "width": "fill_container",
+          "padding": [
+            20,
+            20,
+            0,
+            20
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "yzwhg",
+              "name": "列表标题",
+              "fill": "#1A1D26",
+              "content": "持仓基金",
+              "fontFamily": "Inter",
+              "fontSize": 15,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "S8kTj",
+              "name": "取消文字",
+              "fill": "#4F6CF7",
+              "content": "取消",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "500"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "DKwFA",
+          "name": "基金列表",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 10,
+          "padding": [
+            12,
+            20,
+            0,
+            20
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "kIuo8",
+              "name": "基金行-中欧医疗健康混合A",
+              "width": "fill_container",
+              "gap": 10,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "uefmu",
+                  "name": "复选框",
+                  "width": 22,
+                  "height": 22,
+                  "fill": "#4F6CF7",
+                  "cornerRadius": 4,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "Mwcz4",
+                      "name": "勾选",
+                      "width": 14,
+                      "height": 14,
+                      "icon": "check",
+                      "library": "lucide",
+                      "fill": "#FFFFFF"
+                    }
+                  ]
+                },
+                {
+                  "id": "ToGTA",
+                  "type": "ref",
+                  "ref": "ydZlc",
+                  "name": "卡片-中欧医疗健康混合A",
+                  "width": 303,
+                  "descendants": {
+                    "PXAao": {
+                      "content": "中欧医疗健康混合A"
+                    },
+                    "L3rxGU": {
+                      "content": "003095"
+                    },
+                    "Yl4xH": {
+                      "content": "估值"
+                    },
+                    "xFhQG": {
+                      "content": "2.3456"
+                    },
+                    "AKSgA": {
+                      "content": "+3.21%",
+                      "fill": "#E74C3C"
+                    },
+                    "vtybo": {
+                      "enabled": false
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "PpyOm",
+              "name": "基金行-易方达蓝筹精选混合",
+              "width": "fill_container",
+              "gap": 10,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "V800F",
+                  "name": "复选框",
+                  "width": 22,
+                  "height": 22,
+                  "fill": "#4F6CF7",
+                  "cornerRadius": 4,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "WIoj9",
+                      "name": "勾选",
+                      "width": 14,
+                      "height": 14,
+                      "icon": "check",
+                      "library": "lucide",
+                      "fill": "#FFFFFF"
+                    }
+                  ]
+                },
+                {
+                  "id": "TI19P",
+                  "type": "ref",
+                  "ref": "ydZlc",
+                  "name": "卡片-易方达蓝筹精选混合",
+                  "width": 303,
+                  "descendants": {
+                    "PXAao": {
+                      "content": "易方达蓝筹精选混合"
+                    },
+                    "L3rxGU": {
+                      "content": "005827"
+                    },
+                    "Yl4xH": {
+                      "content": "估值"
+                    },
+                    "xFhQG": {
+                      "content": "1.8560"
+                    },
+                    "AKSgA": {
+                      "content": "-1.05%",
+                      "fill": "#27AE60"
+                    },
+                    "vtybo": {
+                      "enabled": false
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ALqsH",
+              "name": "基金行-招商中证白酒指数",
+              "width": "fill_container",
+              "gap": 10,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "WhPqf",
+                  "name": "复选框",
+                  "width": 22,
+                  "height": 22,
+                  "fill": "#F0F0F5",
+                  "cornerRadius": 4,
+                  "justifyContent": "center",
+                  "alignItems": "center"
+                },
+                {
+                  "id": "o1Qng",
+                  "type": "ref",
+                  "ref": "ydZlc",
+                  "name": "卡片-招商中证白酒指数",
+                  "width": 303,
+                  "descendants": {
+                    "PXAao": {
+                      "content": "招商中证白酒指数"
+                    },
+                    "L3rxGU": {
+                      "content": "161725"
+                    },
+                    "Yl4xH": {
+                      "content": "估值"
+                    },
+                    "xFhQG": {
+                      "content": "0.9560"
+                    },
+                    "AKSgA": {
+                      "content": "-0.52%",
+                      "fill": "#27AE60"
+                    },
+                    "vtybo": {
+                      "enabled": false
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "gWKat",
+          "layoutPosition": "absolute",
+          "x": 0,
+          "y": 700,
+          "name": "底部操作栏",
+          "width": "fill_container(375)",
+          "height": 56,
+          "fill": "#FFFFFF",
+          "padding": [
+            0,
+            20
+          ],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "HQNYu",
+              "name": "删除按钮",
+              "width": "fill_container",
+              "height": 44,
+              "fill": "#E74C3C",
+              "cornerRadius": 10,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "pn0zs",
+                  "name": "按钮文字",
+                  "fill": "#FFFFFF",
+                  "content": "删除（2）",
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "X0e43E",
+          "type": "ref",
+          "ref": "x1FO3c",
+          "name": "底部Tab栏",
+          "layoutPosition": "absolute",
+          "x": 0,
+          "y": 756,
+          "descendants": {
+            "T54zF": {
+              "fill": "#4F6CF7"
+            },
+            "JJasg": {
+              "fill": "#4F6CF7",
+              "fontWeight": "600"
+            },
+            "jK4qq": {
+              "fill": "#B8BBC6"
+            },
+            "vaayH": {
+              "fill": "#B8BBC6",
+              "fontWeight": "400"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "variables": {
+    "bg": {
+      "type": "color",
+      "value": "#F2F3F7"
+    },
+    "cardBg": {
+      "type": "color",
+      "value": "#FFFFFF"
+    },
+    "cardPadding": {
+      "type": "number",
+      "value": 16
+    },
+    "cardRadius": {
+      "type": "number",
+      "value": 12
+    },
+    "divider": {
+      "type": "color",
+      "value": "#F0F0F5"
+    },
+    "fontLg": {
+      "type": "number",
+      "value": 18
+    },
+    "fontMd": {
+      "type": "number",
+      "value": 15
+    },
+    "fontSm": {
+      "type": "number",
+      "value": 13
+    },
+    "fontXl": {
+      "type": "number",
+      "value": 24
+    },
+    "fontXs": {
+      "type": "number",
+      "value": 11
+    },
+    "green": {
+      "type": "color",
+      "value": "#27AE60"
+    },
+    "greenLight": {
+      "type": "color",
+      "value": "#EDFBF4"
+    },
+    "orange": {
+      "type": "color",
+      "value": "#F39C12"
+    },
+    "primary": {
+      "type": "color",
+      "value": "#4F6CF7"
+    },
+    "primaryLight": {
+      "type": "color",
+      "value": "#EEF1FF"
+    },
+    "red": {
+      "type": "color",
+      "value": "#E74C3C"
+    },
+    "redLight": {
+      "type": "color",
+      "value": "#FFF0EE"
+    },
+    "shadow": {
+      "type": "color",
+      "value": "#0000000D"
+    },
+    "tabHeight": {
+      "type": "number",
+      "value": 56
+    },
+    "textPrimary": {
+      "type": "color",
+      "value": "#1A1D26"
+    },
+    "textSecondary": {
+      "type": "color",
+      "value": "#8C8FA6"
+    },
+    "textTertiary": {
+      "type": "color",
+      "value": "#B8BBC6"
+    },
+    "trendColor_3month": {
+      "type": "color",
+      "value": "#10B981"
+    },
+    "trendColor_6month": {
+      "type": "color",
+      "value": "#3B82F6"
+    },
+    "trendColor_1year": {
+      "type": "color",
+      "value": "#8B5CF6"
+    },
+    "trendColor_3year": {
+      "type": "color",
+      "value": "#F59E0B"
+    }
+  },
+  "fileToken": "fa24ccfa-0456-4dae-8c8d-468b8cab53a0"
+}
