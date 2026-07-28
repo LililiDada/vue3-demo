@@ -8,14 +8,16 @@
  * 无需修改 help 路由本身。
  */
 
+export type FieldDef = string | { type: string; desc: string }
+
 export interface ApiDocEntry {
   api: string           // 接口路径，如 "portfolio/list"
   method: string        // 请求方法
   description: string   // 接口说明
   category: string      // 分类标识，如 "portfolio"
   categoryName: string  // 分类中文名
-  request?: Record<string, string>   // 请求字段说明
-  response?: Record<string, string>  // 响应字段说明
+  request?: Record<string, FieldDef>   // 请求字段说明
+  response?: Record<string, FieldDef>  // 响应字段说明
 }
 
 // 内存存储所有注册的文档

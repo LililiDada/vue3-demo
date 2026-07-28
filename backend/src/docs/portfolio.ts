@@ -11,8 +11,12 @@ register({
   description: '根据基金代码查询基金名称',
   category: 'portfolio',
   categoryName: '持仓管理',
-  request: { code: '基金代码，必填，如 000001' },
-  response: { code: '基金代码', name: '基金名称', pinyin: '拼音缩写' },
+  request: { code: { type: 'string', desc: '基金代码，必填，如 000001' } },
+  response: {
+    code: { type: 'string', desc: '基金代码' },
+    name: { type: 'string', desc: '基金名称' },
+    pinyin: { type: 'string', desc: '拼音缩写' },
+  },
 })
 
 register({
@@ -21,13 +25,13 @@ register({
   description: '获取基金实时估值（最新净值和涨跌幅）',
   category: 'portfolio',
   categoryName: '持仓管理',
-  request: { codes: '基金代码数组，必填，如 ["000001","110011"]' },
+  request: { codes: { type: 'string[]', desc: '基金代码数组，必填，如 ["000001","110011"]' } },
   response: {
-    '[code].name': '基金名称',
-    '[code].netValue': '最新净值',
-    '[code].estimateValue': '估算净值',
-    '[code].changePercent': '估算涨跌幅（%）',
-    '[code].changeAmount': '估算涨跌值',
+    '[code].name': { type: 'string', desc: '基金名称' },
+    '[code].netValue': { type: 'number', desc: '最新净值' },
+    '[code].estimateValue': { type: 'number', desc: '估算净值' },
+    '[code].changePercent': { type: 'number', desc: '估算涨跌幅（%）' },
+    '[code].changeAmount': { type: 'number', desc: '估算涨跌值' },
   },
 })
 
@@ -39,18 +43,18 @@ register({
   categoryName: '持仓管理',
   request: {},
   response: {
-    id: '持仓记录唯一ID',
-    code: '基金代码',
-    name: '基金名称',
-    amount: '投入总金额（元）',
-    shares: '持有份额',
-    buyNav: '买入时基金净值',
-    currentNav: '最新基金净值',
-    currentValue: '当前市值 = shares × currentNav',
-    todayProfit: '今日收益 = shares × 今日涨跌值',
-    totalProfit: '累计收益 = currentValue - amount',
-    profitRate: '持有收益率 = (currentValue / amount - 1) × 100%',
-    createdAt: '创建时间',
+    id: { type: 'int', desc: '持仓记录唯一ID' },
+    code: { type: 'string', desc: '基金代码' },
+    name: { type: 'string', desc: '基金名称' },
+    amount: { type: 'number', desc: '投入总金额（元）' },
+    shares: { type: 'number', desc: '持有份额' },
+    buyNav: { type: 'number', desc: '买入时基金净值' },
+    currentNav: { type: 'number', desc: '最新基金净值' },
+    currentValue: { type: 'number', desc: '当前市值 = shares × currentNav' },
+    todayProfit: { type: 'number', desc: '今日收益 = shares × 今日涨跌值' },
+    totalProfit: { type: 'number', desc: '累计收益 = currentValue - amount' },
+    profitRate: { type: 'string', desc: '持有收益率，前端直接展示' },
+    createdAt: { type: 'string', desc: '创建时间' },
   },
 })
 
@@ -61,11 +65,11 @@ register({
   category: 'portfolio',
   categoryName: '持仓管理',
   request: {
-    code: '基金代码，必填',
-    name: '基金名称，可选，不传自动识别',
-    amount: '投入金额（元），必填，正整数',
+    code: { type: 'string', desc: '基金代码，必填' },
+    name: { type: 'string', desc: '基金名称，可选，不传自动识别' },
+    amount: { type: 'number', desc: '投入金额（元），必填' },
   },
-  response: { id: '新增持仓记录的ID' },
+  response: { id: { type: 'int', desc: '新增持仓记录的ID' } },
 })
 
 register({
@@ -75,9 +79,9 @@ register({
   category: 'portfolio',
   categoryName: '持仓管理',
   request: {
-    id: '持仓ID，必填',
-    name: '基金名称，可选',
-    amount: '投入金额，可选，传则重新计算份额',
+    id: { type: 'int', desc: '持仓ID，必填' },
+    name: { type: 'string', desc: '基金名称，可选' },
+    amount: { type: 'number', desc: '投入金额，可选，传则重新计算份额' },
   },
   response: {},
 })
@@ -88,7 +92,7 @@ register({
   description: '删除持仓记录',
   category: 'portfolio',
   categoryName: '持仓管理',
-  request: { id: '持仓ID，必填' },
+  request: { id: { type: 'int', desc: '持仓ID，必填' } },
   response: {},
 })
 
@@ -100,10 +104,10 @@ register({
   categoryName: '持仓管理',
   request: {},
   response: {
-    totalAssets: '总资产（元）',
-    totalInvest: '总投入（元）',
-    totalTodayProfit: '今日总收益（元）',
-    totalProfit: '累计总收益（元）',
-    profitRate: '持有收益率（%）',
+    totalAssets: { type: 'number', desc: '总资产（元）' },
+    totalInvest: { type: 'number', desc: '总投入（元）' },
+    totalTodayProfit: { type: 'number', desc: '今日总收益（元）' },
+    totalProfit: { type: 'number', desc: '累计总收益（元）' },
+    profitRate: { type: 'string', desc: '持有收益率，前端直接展示' },
   },
 })

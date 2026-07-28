@@ -6,3 +6,4 @@
  */
 
 import './portfolio'
+import './fund'

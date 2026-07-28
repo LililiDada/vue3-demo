@@ -188,7 +188,7 @@ router.post("/list", async (_req: Request, res: Response) => {
         currentValue: Number(currentValue.toFixed(2)),
         todayProfit: Number(todayProfit.toFixed(2)),
         totalProfit: Number(totalProfit.toFixed(2)),
-        profitRate: Number(profitRate.toFixed(2)),
+        profitRate: profitRate.toFixed(2),
       };
     });
 
@@ -336,7 +336,7 @@ router.post("/summary", async (_req: Request, res: Response) => {
         totalInvest: Number(totalInvest.toFixed(2)),
         totalTodayProfit: Number(totalTodayProfit.toFixed(2)),
         totalProfit: Number(totalProfit.toFixed(2)),
-        profitRate: Number(profitRate.toFixed(2)),
+        profitRate: profitRate.toFixed(2),
       }),
     );
   } catch (e: any) {
